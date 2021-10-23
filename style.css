@@ -1,5 +1,111 @@
 :root {
   --entry: #a4a4a4;
   --hover: #e1e1e150;
+}
+.tabColor {
+  background-color: #a4a4a4;
+}
 
+a:link {
+  color: black;
+  text-decoration: none;
+}
+.bi-person-circle {
+  font-size: 3em;
+  position: relative;
+  top: 2em;
+}
+.container {
+  margin: auto;
+}
+.contactUs {
+  position: relative;
+  left: 50em;
+}
+.selectedPostContainer {
+  border-top: 5px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+.selectedPostContainer p {
+  font: bold;
+  font-size: 1.75em;
+  font-weight: bolder;
+}
+.selectedUserProfileName {
+  position: relative;
+  left: 20em;
+  bottom: 2em;
+  font-size: 1.75em;
+  font-weight: bold;
+}
+.publicPostsContainer {
+  border-top: 5px solid black;
+}
+.publicPosts {
+  display: inline-block;
+  background-color: #a4a4a4;
+  border: solid 1px #a4a4a4;
+  border-radius: 3%;
+  position: relative;
+  left: 4em;
+}
+.publicPosts p {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.publicVoteComponent p {
+  font-weight: bold;
+}
+.publicUserProfileName {
+  position: relative;
+  left: 3em;
+}
+
+.tabItem {
+  border: solid 2px black;
+  padding: 0.75em;
+  font-weight: bold;
+}
+.uDecideLogo {
+  font-size: 4em;
+}
+
+.uDecideNavBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 1.25em;
+}
+
+.uDecideTabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+ul {
+  list-style: none;
+}
+.voteBar1Display {
+  background-color: black;
+  width: 25%;
+}
+.voteBar2Display {
+  background-color: black;
+  width: 40%;
+}
+.voteBarValue1 {
+  position: relative;
+  left: 10em;
+  bottom: 1.15em;
+  font-weight: 400;
+  font-size: 1.95em;
+}
+.voteBarValue2 {
+  position: relative;
+  left: 15em;
+  bottom: 1.15em;
+  font-weight: 400;
+  font-size: 1.95em;
 }
