@@ -7,15 +7,19 @@
 :root {
   --entry: #a4a4a4;
   --hover: #e1e1e150;
+  --d-green: #6a994e;
+  --l-green: #a7c957;
+  --grey: #e5e5e5;
+  --cream: #f2e8cf;
 }
 .borderColorCream{
-  border: solid 2px #f2e8cf;
+  border: solid 2px var(--cream);
 }
 .borderColorGreen {
-  border: solid 2px #6a994e;
+  border: solid 2px var(--d-green);
 }
 .borderColorGrey {
-  border: solid 2px #e5e5e5;
+  border: solid 2px var(--grey);
 }
 
 a {
@@ -48,7 +52,7 @@ a:hover{
 
 }
 .selectedPostContainer {
-  background-color: #6a994e;
+  background-color: var(--d-green);
   border-top: 5px solid #6a994e;
   border-bottom: 2px solid #6a994e;
   border-left: 2px solid #6a994e;
@@ -56,13 +60,13 @@ a:hover{
 }
 
 .selectedPostContainer p {
-  color: #f2e8cf;
+  color: var(--cream);
   font: bold;
   font-size: 1.75em;
   font-weight: bolder;
 }
 .selectedUserProfileName {
-  color: #f2e8cf;
+  color: var(--cream);
   position: relative;
   left: 20em;
   bottom: 2em;
@@ -72,7 +76,7 @@ a:hover{
 .logInInputArea{
   display: flex;
   flex-direction: column;
-  background-color: #e5e5e5;
+  background-color: var(--grey);
   justify-content: center;
   align-items: center;
   padding: 2em;
@@ -83,8 +87,8 @@ a:hover{
 }
 .publicPosts {
   display: inline-block;
-  background-color: #a4a4a4;
-  border: solid 1px #a4a4a4;
+  background-color: var(--entry);
+  border: solid 1px;
   border-radius: 3%;
   position: relative;
   left: 4em;
@@ -102,7 +106,7 @@ a:hover{
 }
 
 .tabItem {
-  border-bottom: #6a994e;
+  border-bottom: var(--d-green);
   /* border-radius:5%; */
   padding: 0.75em;
   font-weight: bold;
@@ -112,17 +116,17 @@ a:hover{
   color:#f2e8cf
 }
 .tabColorGrey {
-  background-color: #e5e5e5;
+  background-color: var(--grey);
 }
 .tabColorGreen {
-  background-color: #6a994e;
+  background-color: var(--d-green);
 }
 
 .textColorGreen{
-  color:#6a994e;
+  color:var(--d-green);
 }
 .textColorLightGreen{
-  color:#a7c957;
+  color:var(--l-green);
 }
 .uDecideLogo {
   font-size: 4em;
@@ -148,16 +152,16 @@ ul {
   color: white;
 }
 .voteBar1Display {
-  background-color: #a7c957;
+  background-color: var(--l-green);
   width: 25%;
 }
 .voteBar2Display {
-  background-color: #a7c957;
+  background-color: var(--l-green);
   width: 40%;
 }
 .voteBarValue1 {
   display: inline-block;
-  color: #f2e8cf;
+  color: var(--cream);
   position: relative;
   left: 10em;
   bottom: 1.15em;
@@ -166,7 +170,7 @@ ul {
 }
 .voteBarValue2 {
   display: inline-block;
-  color: #f2e8cf;
+  color: var(--cream);
   position: relative;
   left: 15em;
   bottom: 1.15em;
