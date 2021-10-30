@@ -6,38 +6,54 @@
   --grey: #e5e5e5;
   --cream: #f2e8cf;
 }
-
-.uDecideLogo {
-  font-size: 4em;
+a {
+  text-decoration: none;
+}
+.active {
+  border: 0;
+}
+.nav-link:hover {
+  color: var(--l-green);
+}
+body {
+  background-color: var(--d-green);
+}
+.container {
+  margin: auto;
 }
 
-.uDecideNavBar {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  font-size: 1.25em;
+.containerSize {
+  height: 100vh;
 }
-
-.logInInputArea{
+h1 {
+  font-size: 3em;
+}
+.logInTitleArea {
+  font-size: 2em;
+}
+.logInInputArea {
   display: flex;
   flex-direction: column;
   background-color: var(--grey);
   justify-content: center;
   align-items: center;
   padding: 2em;
+  height: 50%;
   width: 50%;
 }
 
-.containerSize{
-  height: 100vh;
+.mainContentArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.rowHeight {
+  height: 90%;
 }
 
-.container {
-  margin: auto;
-}
-
-.textColorCream{
-  color:#f2e8cf
+.textColorCream {
+  color: var(--cream);
 }
 .tabColorGrey {
   background-color: var(--grey);
@@ -46,9 +62,19 @@
   background-color: var(--d-green);
 }
 
-.textColorGreen{
-  color:var(--d-green);
+.textColorGreen {
+  color: var(--d-green);
 }
-.textColorLightGreen{
-  color:var(--l-green);
+.textColorLightGreen {
+  color: var(--l-green);
+}
+.uDecideLogo {
+  font-size: 4em;
+}
+
+.uDecideNavBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.25em;
 }
