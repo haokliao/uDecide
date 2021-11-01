@@ -86,39 +86,56 @@ a:hover{
 }
 
 /* Left BS Container */
-
-
-.bi-person-circle {
-  font-size: 3em;
-  position: relative;
-  /* top: 2em; */
-}
-
 .feed{
-  background-color: gainsboro;
   border-top: 6px solid #6a994e;
+  font-family: 'Poppins';
+  margin-bottom: 1em;
 }
-.publicPosts {
-  display: inline-block;
-  background-color: var(--entry);
-  border: solid 1px;
-  border-radius: 3%;
-  position: relative;
-  left: 4em;
-  width: max-content;
+
+.entry{
+  margin-top: 1em;
 }
-.publicPosts p {
-  font-weight: bold;
-  font-size: 1.1em;
-}
-.publicVoteComponent p {
-  font-weight: bold;
-  display: inline;
-}
-.publicUserProfileName {
-  position: relative;
+
+.publicUserName {
   left: 3em;
 }
+
+.publicUserPic{
+
+  margin-left: .5em;
+  margin-right: .5em;
+  font-size: 3em;
+}
+
+.publicPosts {
+  background-color: var(--entry);
+
+  border: solid 1px;
+  border-radius: 10px;
+}
+
+.publicPosts p {
+  font-weight: bold;
+  font-family: "Poppins";
+  font-size: 20px;
+
+  margin-top: .25em;
+  margin-left: .5em;
+  margin-bottom: 0em;
+}
+
+.publicVoteComponent p {
+  display: inline;
+
+  font-weight: bold;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 500;
+
+  margin-left: 1em;
+
+}
+
 
 .tabItem {
   border-bottom: var(--d-green);
@@ -149,20 +166,17 @@ ul {
   list-style: none;
 }
 
-/* right box */
-/* 
-.contactUs {
-  position: relative;
-  left: 50em;
-} */
+/* RIGHTRIGHTRIGHT box */
 
-.selectedPostContainer {
+
+
+.selectedPostArea {
   background-color: var(--d-green);
   padding: 2em 2em 2em 2em;
   /* border-top: 5px 2px 2px 2px solid var(--d-green); */
 }
 
-.selectedPostContainer p {
+.selectedPostArea p {
   color: var(--cream);
   font: bold;
   font-size: 1.75em;
@@ -207,3 +221,9 @@ ul {
   font-weight: 400;
   font-size: 1.95em;
 }
+
+/* 
+.contactUs {
+  position: relative;
+  left: 50em;
+} */
