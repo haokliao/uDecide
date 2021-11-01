@@ -26,7 +26,7 @@ Domine, Poppin
 }
 
 .uDecideLogo {
-  color:  var(--l-green);
+  color:  var(--d-green);
   font-size: 40px;
   font-weight: 600;
   font-family: 'Poppins';
@@ -50,6 +50,7 @@ Domine, Poppin
   /* height: 0rem; */
   margin-left: .5em;
   width: 83rem;
+  /* works for now but */
   /* figuring out how to make this scaleable */
   position: relative;
   transform: translateY(-500%);
@@ -79,16 +80,22 @@ a:hover{
   color: var(--l-green);
 }
 
-/* Middle Bootstrap Container */
+.body-content{
+  margin: .75em 20em 1em 1em;
+  /* background-color: green; */
+}
+
+/* Left BS Container */
 
 
 .bi-person-circle {
   font-size: 3em;
   position: relative;
-  top: 2em;
+  /* top: 2em; */
 }
 
-.publicPostsContainer {
+.feed{
+  background-color: gainsboro;
   border-top: 6px solid #6a994e;
 }
 .publicPosts {
@@ -103,10 +110,10 @@ a:hover{
 .publicPosts p {
   font-weight: bold;
   font-size: 1.1em;
-  
 }
 .publicVoteComponent p {
   font-weight: bold;
+  display: inline;
 }
 .publicUserProfileName {
   position: relative;
@@ -143,11 +150,11 @@ ul {
 }
 
 /* right box */
-
+/* 
 .contactUs {
   position: relative;
   left: 50em;
-}
+} */
 
 .selectedPostContainer {
   background-color: var(--d-green);
