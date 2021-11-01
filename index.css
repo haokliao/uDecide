@@ -3,7 +3,9 @@
 #a7c957 - Light Green
 #e5e5e5 - Grey
 #f2e8cf - cream
+Domine, Poppin
 */
+
 :root {
   --entry: #a4a4a4;
   --hover: #e1e1e150;
@@ -13,14 +15,62 @@
   --cream: #f2e8cf;
 }
 
-.borderColorCream{
-  border: solid 2px var(--cream);
+.uDecideNavBar{
+  position: relative;
+  margin: .75em 1em 4em .75em;
+  max-width: 100%;
+  display: flex;
+  z-index: 1;
+
+  /* background-color: red; */
 }
-.borderColorGreen {
-  border: solid 2px var(--d-green);
+
+.uDecideLogo {
+  color:  var(--l-green);
+  font-size: 40px;
+  font-weight: 600;
+  font-family: 'Poppins';
 }
-.borderColorGrey {
-  border: solid 2px var(--grey);
+
+.uDecideLogoTxt {
+  font-size: 36px;
+  font-weight: 900;
+  font-family: 'Poppins';
+
+  
+  margin-left: 1em;
+  height: 100%;
+  z-index: 1;
+  /* background-color: gray; */
+
+}
+.uDecideLogoTxt::after{
+  display: inline-block;
+  content: "";
+  border-top: .1rem solid var(--l-green);
+  /* height: 0rem; */
+  margin-left: .5em;
+  width: 66rem;
+  /* temporary, need to figure out how the fuck i can fix this
+   */
+  transform: translateY(-500%);
+  /* figuring this out too lmfao */
+  z-index: 1;
+  /* background-color: var(--l-green); */
+
+}
+
+.user-nav{
+  display: flex;
+  margin-right: auto;
+  justify-content: start;
+  /* margin-left: auto; */
+  font-size: 18px;
+  font-family: 'Poppins';
+  position: relative;
+  z-index: 0;
+
+  /* background-color: lightgray; */
 }
 
 a {
@@ -30,28 +80,27 @@ a {
 a:hover{
   color: var(--l-green);
 }
+
+/* Middle Bootstrap Container */
+
+
 .bi-person-circle {
   font-size: 3em;
   position: relative;
   top: 2em;
 }
 
-.container {
+/* .container {
   margin: auto;
 }
 .containerSize{
   height: 100vh;
-}
+} */
 .contactUs {
   position: relative;
   left: 50em;
 }
 
-.horizontalLineTickness{
-  border: solid 2px;
-  
-
-}
 .selectedPostContainer {
   background-color: var(--d-green);
   padding: 2em 2em 2em 2em;
@@ -72,17 +121,9 @@ a:hover{
   font-size: 1.75em;
   font-weight: bold;
 }
-/* .logInInputArea{
-  display: flex;
-  flex-direction: column;
-  background-color: var(--grey);
-  justify-content: center;
-  align-items: center;
-  padding: 2em;
-  width: 50%;
-} */
+
 .publicPostsContainer {
-  border-top: 5px solid #6a994e;
+  border-top: 6px solid #6a994e;
 }
 .publicPosts {
   display: inline-block;
@@ -108,10 +149,13 @@ a:hover{
 
 .tabItem {
   border-bottom: var(--d-green);
-  /* border-radius:5%; */
-  padding: 0.75em;
+  border-radius:5%;
+  padding: 0 .5em;
+  margin-right: 1em;
+
   font-weight: bold;
-  margin-right: 0.75em;
+  font-family: 'Domine';
+  font-size: 24px;
 }
 .textColorCream{
   color:#f2e8cf
@@ -121,23 +165,6 @@ a:hover{
 }
 .tabColorGreen {
   background-color: var(--d-green);
-}
-
-.textColorGreen{
-  color:var(--d-green);
-}
-.textColorLightGreen{
-  color:var(--l-green);
-}
-.uDecideLogo {
-  font-size: 4em;
-}
-
-.uDecideNavBar {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  font-size: 1.25em;
 }
 
 .uDecideTabs {
