@@ -37,7 +37,6 @@ Domine, Poppin
   font-weight: 900;
   font-family: 'Poppins';
 
-  
   margin-left: 1em;
   height: 100%;
   z-index: 1;
@@ -50,25 +49,24 @@ Domine, Poppin
   border-top: .1rem solid var(--l-green);
   /* height: 0rem; */
   margin-left: .5em;
-  width: 66rem;
-  /* temporary, need to figure out how the fuck i can fix this
-   */
+  width: 83rem;
+  /* figuring out how to make this scaleable */
+  position: relative;
   transform: translateY(-500%);
-  /* figuring this out too lmfao */
-  z-index: 1;
+  z-index: 0;
   /* background-color: var(--l-green); */
-
 }
 
 .user-nav{
   display: flex;
   margin-right: auto;
   justify-content: start;
-  /* margin-left: auto; */
+
   font-size: 18px;
   font-family: 'Poppins';
-  position: relative;
-  z-index: 0;
+  position: absolute;
+  left: 83%;
+  z-index: 1;
 
   /* background-color: lightgray; */
 }
@@ -88,38 +86,6 @@ a:hover{
   font-size: 3em;
   position: relative;
   top: 2em;
-}
-
-/* .container {
-  margin: auto;
-}
-.containerSize{
-  height: 100vh;
-} */
-.contactUs {
-  position: relative;
-  left: 50em;
-}
-
-.selectedPostContainer {
-  background-color: var(--d-green);
-  padding: 2em 2em 2em 2em;
-  /* border-top: 5px 2px 2px 2px solid var(--d-green); */
-}
-
-.selectedPostContainer p {
-  color: var(--cream);
-  font: bold;
-  font-size: 1.75em;
-  font-weight: bolder;
-}
-.selectedUserProfileName {
-  color: var(--cream);
-  position: relative;
-  left: 20em;
-  bottom: 2em;
-  font-size: 1.75em;
-  font-weight: bold;
 }
 
 .publicPostsContainer {
@@ -175,6 +141,35 @@ a:hover{
 ul {
   list-style: none;
 }
+
+/* right box */
+
+.contactUs {
+  position: relative;
+  left: 50em;
+}
+
+.selectedPostContainer {
+  background-color: var(--d-green);
+  padding: 2em 2em 2em 2em;
+  /* border-top: 5px 2px 2px 2px solid var(--d-green); */
+}
+
+.selectedPostContainer p {
+  color: var(--cream);
+  font: bold;
+  font-size: 1.75em;
+  font-weight: bolder;
+}
+.selectedUserProfileName {
+  color: var(--cream);
+  position: relative;
+  left: 20em;
+  bottom: 2em;
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
 .voteBar1,
 .voteBar2 {
   color: white;
