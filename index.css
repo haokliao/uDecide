@@ -84,6 +84,11 @@ a:hover{
   margin: .75em 20em 1em 1em;
   /* background-color: green; */
 }
+<<<<<<< HEAD
+=======
+
+/* Left BS Container */
+>>>>>>> c5845f1... bouta mess this shit up
 
 /* Left BS Container */
 .feed{
@@ -92,12 +97,24 @@ a:hover{
   margin-bottom: 1em;
 }
 
+<<<<<<< HEAD
 .entry{
   margin-top: 1em;
 }
 
 .publicUserName {
   left: 3em;
+=======
+.bi-person-circle {
+  font-size: 3em;
+  position: relative;
+  /* top: 2em; */
+}
+
+.feed{
+  background-color: gainsboro;
+  border-top: 6px solid #6a994e;
+>>>>>>> c5845f1... bouta mess this shit up
 }
 
 .publicUserPic{
@@ -116,24 +133,32 @@ a:hover{
 
 .publicPosts p {
   font-weight: bold;
+<<<<<<< HEAD
   font-family: "Poppins";
   font-size: 20px;
 
   margin-top: .25em;
   margin-left: .5em;
   margin-bottom: 0em;
+=======
+  font-size: 1.1em;
+>>>>>>> c5845f1... bouta mess this shit up
 }
 
 .publicVoteComponent p {
   display: inline;
 
   font-weight: bold;
+<<<<<<< HEAD
   font-family: "Poppins";
   font-size: 14px;
   font-weight: 500;
 
   margin-left: 1em;
 
+=======
+  display: inline;
+>>>>>>> c5845f1... bouta mess this shit up
 }
 
 
@@ -166,9 +191,18 @@ ul {
   list-style: none;
 }
 
+<<<<<<< HEAD
 /* RIGHTRIGHTRIGHT box */
 
 
+=======
+/* right box */
+/* 
+.contactUs {
+  position: relative;
+  left: 50em;
+} */
+>>>>>>> c5845f1... bouta mess this shit up
 
 .selectedPostArea {
   background-color: var(--d-green);
