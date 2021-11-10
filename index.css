@@ -49,7 +49,7 @@ Domine, Poppin
   border-top: .1rem solid var(--l-green);
   /* height: 0rem; */
   margin-left: .5em;
-  width: 83rem;
+  width: 93rem;
   /* works for now but */
   /* figuring out how to make this scaleable */
   position: relative;
@@ -66,7 +66,7 @@ Domine, Poppin
   font-size: 18px;
   font-family: 'Poppins';
   position: absolute;
-  left: 83%;
+  left: 84%;
   z-index: 1;
 
   /* background-color: lightgray; */
@@ -81,40 +81,26 @@ a:hover{
 }
 
 .body-content{
-  margin: .75em 20em 1em 1em;
+  /* margin: 0em 0em 1em 1em; */
   /* background-color: green; */
 }
-<<<<<<< HEAD
-=======
 
 /* Left BS Container */
->>>>>>> c5845f1... bouta mess this shit up
-
 /* Left BS Container */
+/* Left BS Container */
+
 .feed{
   border-top: 6px solid #6a994e;
   font-family: 'Poppins';
   margin-bottom: 1em;
 }
 
-<<<<<<< HEAD
 .entry{
   margin-top: 1em;
 }
 
 .publicUserName {
   left: 3em;
-=======
-.bi-person-circle {
-  font-size: 3em;
-  position: relative;
-  /* top: 2em; */
-}
-
-.feed{
-  background-color: gainsboro;
-  border-top: 6px solid #6a994e;
->>>>>>> c5845f1... bouta mess this shit up
 }
 
 .publicUserPic{
@@ -125,7 +111,7 @@ a:hover{
 }
 
 .publicPosts {
-  background-color: var(--entry);
+  background-color: #e5e5e5;
 
   border: solid 1px;
   border-radius: 10px;
@@ -133,32 +119,24 @@ a:hover{
 
 .publicPosts p {
   font-weight: bold;
-<<<<<<< HEAD
   font-family: "Poppins";
   font-size: 20px;
 
   margin-top: .25em;
   margin-left: .5em;
   margin-bottom: 0em;
-=======
-  font-size: 1.1em;
->>>>>>> c5845f1... bouta mess this shit up
 }
 
 .publicVoteComponent p {
   display: inline;
 
   font-weight: bold;
-<<<<<<< HEAD
   font-family: "Poppins";
   font-size: 14px;
   font-weight: 500;
 
   margin-left: 1em;
 
-=======
-  display: inline;
->>>>>>> c5845f1... bouta mess this shit up
 }
 
 
@@ -172,9 +150,7 @@ a:hover{
   font-family: 'Domine';
   font-size: 24px;
 }
-.textColorCream{
-  color:#f2e8cf
-}
+
 .tabColorGrey {
   background-color: var(--grey);
 }
@@ -191,44 +167,59 @@ ul {
   list-style: none;
 }
 
-<<<<<<< HEAD
 /* RIGHTRIGHTRIGHT box */
-
-
-=======
-/* right box */
-/* 
-.contactUs {
-  position: relative;
-  left: 50em;
-} */
->>>>>>> c5845f1... bouta mess this shit up
+/* RIGHTRIGHTRIGHT box */
+/* RIGHTRIGHTRIGHT box */
 
 .selectedPostArea {
   background-color: var(--d-green);
+  /* margin-left: 2em; */
   padding: 2em 2em 2em 2em;
+
+  color: #fff;
+  font-family: 'Poppins';
+
+  font-size: 24px;
+  font-weight: bold;
+
   /* border-top: 5px 2px 2px 2px solid var(--d-green); */
 }
 
-.selectedPostArea p {
+.selectedPostText h3 {
   color: var(--cream);
-  font: bold;
-  font-size: 1.75em;
-  font-weight: bolder;
-}
-.selectedUserProfileName {
-  color: var(--cream);
-  position: relative;
-  left: 20em;
-  bottom: 2em;
-  font-size: 1.75em;
+  font-family: 'Poppins';
+  font-size: 48px;
   font-weight: bold;
+  text-align: center;
+
+  /* border-top: 5px 2px 2px 2px solid var(--d-green); */
 }
 
-.voteBar1,
+.selectedInfo{
+  color: var(--cream);
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.selectedPostArea p {
+  /* color: var(--cream);
+  font-family: 'Poppins';
+  font: bold;
+  font-size: 24px;
+  font-weight: bold; */
+}
+.selectedUserName {
+  /* position: relative; */
+  /* left: 20em;
+  bottom: 2em; */
+
+}
+
+/* .voteBar1,
 .voteBar2 {
   color: white;
-}
+} */
+
 .voteBar1Display {
   background-color: var(--l-green);
   width: 25%;
@@ -239,21 +230,21 @@ ul {
 }
 .voteBarValue1 {
   display: inline-block;
-  color: var(--cream);
+  /* color: var(--cream); */
   position: relative;
   left: 10em;
   bottom: 1.15em;
-  font-weight: 400;
-  font-size: 1.95em;
+  /* font-weight: 400;
+  font-size: 1.95em; */
 }
 .voteBarValue2 {
   display: inline-block;
-  color: var(--cream);
+  /* color: var(--cream); */
   position: relative;
   left: 15em;
   bottom: 1.15em;
-  font-weight: 400;
-  font-size: 1.95em;
+  /* font-weight: 400;
+  font-size: 1.95em; */
 }
 
 /* 
