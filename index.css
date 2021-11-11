@@ -68,9 +68,13 @@ Domine, Poppin
   position: absolute;
   left: 84%;
   z-index: 1;
-
   /* background-color: lightgray; */
 }
+
+
+/* TABTABTABTAB SECTION */
+/* TABTABTABTAB SECTION */
+/* TABTABTABTAB SECTION */
 
 a {
   color: black;
@@ -80,14 +84,6 @@ a:hover{
   color: var(--l-green);
 }
 
-.body-content{
-  /* margin: 0em 0em 1em 1em; */
-  /* background-color: green; */
-}
-
-/* Left BS Container */
-/* Left BS Container */
-/* Left BS Container */
 
 .feed{
   border-top: 6px solid #6a994e;
@@ -197,8 +193,8 @@ ul {
 
 .selectedInfo{
   color: var(--cream);
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: .5em;
+  margin-bottom: 4em;
 }
 
 .selectedPostArea p {
@@ -209,46 +205,46 @@ ul {
   font-weight: bold; */
 }
 .selectedUserName {
+  text-align: end;
   /* position: relative; */
   /* left: 20em;
   bottom: 2em; */
 
 }
 
-/* .voteBar1,
-.voteBar2 {
-  color: white;
-} */
 
 .voteBar1Display {
   background-color: var(--l-green);
-  width: 25%;
+  width: 50%;
+
 }
 .voteBar2Display {
   background-color: var(--l-green);
-  width: 40%;
-}
-.voteBarValue1 {
-  display: inline-block;
-  /* color: var(--cream); */
-  position: relative;
-  left: 10em;
-  bottom: 1.15em;
-  /* font-weight: 400;
-  font-size: 1.95em; */
-}
-.voteBarValue2 {
-  display: inline-block;
-  /* color: var(--cream); */
-  position: relative;
-  left: 15em;
-  bottom: 1.15em;
-  /* font-weight: 400;
-  font-size: 1.95em; */
+  width: 60%;
 }
 
-/* 
+.voteBar1,.voteBar2{
+  margin-bottom: 2em;
+}
+
+.voteBar1Text,.voteBar2Text{
+  margin-bottom: .5em;
+}
+
+.voteBarVotes1,.voteBarVotes2{
+  text-align: center;
+}
+
+
+
 .contactUs {
-  position: relative;
-  left: 50em;
-} */
+  /* background-color: darkgray; */
+  /* position: relative;
+  left: 50em; */
+  /* text-align: end; */
+  margin-top: 4em;
+  /* flex-direction:row-reverse; */
+}
+.contactUs p{
+  padding-left: 1em;
+}
