@@ -131,16 +131,16 @@ a:hover{
 }
 
 .publicUserName {
-  padding-left: 1em;
+  /* padding-left: 0em; */
   font-size: 18px;
   font-weight: bold;
 }
 
 .publicPosts {
   background-color: #e5e5e5;
-  padding: .35em 0em .35em 1.25em;
+  padding: .35em 0em .35em 1em;
   margin-bottom: .35em;
-  margin-left: 1em;
+  /* margin-left: .75em; */
 
   border-radius: 10px;
 
@@ -157,7 +157,7 @@ a:hover{
 .publicVoteComponent{
   display: flex;
 
-  padding-left: 2em;
+  padding-left: 1em;
   padding-bottom: 0em;
 
   font-family: "Poppins";
@@ -176,37 +176,40 @@ a:hover{
 
 .selectedPostArea {
   background-color: var(--d-green);
-  /* margin-left: 2em; */
-  padding: 2.15em 2em 0em 2em;
+  padding: 2em 3.5em 0em 3.5em;
 
   color: #fff;
   font-family: 'Poppins';
 
-  font-size: 24px;
+  font-size: 25px;
   font-weight: bold;
 }
 
+.selectedPostHead{
+  /* padding-left: 1em;
+  padding-right: 1em; */
+}
+
 .selectedPostText h3 {
-  color: var(--cream);
+  /* color: var(--cream); */
   font-family: 'Poppins';
   font-size: 55px;
+
   font-weight: bolder;
   text-align: center;
+  letter-spacing: .5px;
 
 }
 
 .selectedInfo{
+  padding-top: 1em;
   /* color: var(--cream); */
-  margin-top: 1.5em;
-  margin-bottom: 5.5em;
+  padding-bottom: 6em;
 }
-
 
 .selectedUserName {
   text-align: end;
-
 }
-
 
 .voteBar1Display {
   background-color: var(--l-green);
@@ -230,11 +233,9 @@ a:hover{
   text-align: center;
 }
 
-
-.contactUs {
-  flex-direction:row-reverse;
-}
-
+/* Load + Footer */
+/* Load + Footer */
+/* Load + Footer */
 
 .nextpageIcon{
   color: var(--l-green);
@@ -253,6 +254,8 @@ a:hover{
 
 .contactUs{
   margin-top: 5em;
+  flex-direction:row-reverse;
+
 }
 
 .contactUs a{
