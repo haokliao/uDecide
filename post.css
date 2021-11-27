@@ -114,11 +114,14 @@ a:hover {
   flex-direction: row;
   justify-content: flex-start;
 }
-
+.badge{
+  border-bottom-left-radius:0;
+  border-bottom-right-radius:0;
+}
 .tabItem {
   background-color: var(--d-green);
   border-bottom: var(--d-green);
-  /* border-radius:5%; */
+
 
   padding: 0em 0.5em;
 
@@ -132,6 +135,18 @@ a:hover {
   border-bottom: solid var(--l-green);
   
 }
+
+/*Input and Textarea Style*/
+
+.form-control::placeholder{
+  font-size: 80%;
+  
+}
+.labelFontSize{
+  font-weight: bold;
+}
+
+
 /* POSTPOSTPOST SECTION */
 /* POSTPOSTPOST SECTION */
 /* POSTPOSTPOST SECTION */
@@ -167,7 +182,34 @@ border-radius: 5%;
   font-size: 1.5em;
 }
 .userVotingArea{
+  /* font-family: "Manrope"; */
+  font-family: "Poppins";
   background-color: var(--l-green);
   color:white;
+  padding: 2em;
+  
 }
 
+.createPostTab{
+  width:10em;
+  background-color: var(--l-green);
+  margin: 0;
+}
+.question{
+  font-size: 80%;
+
+}
+.profileName{
+  font-size:80%;
+}
+.tabArea{
+  border-bottom: solid 4px var(--l-green);
+}
+
+.votingInProgressComponent{
+  /* color: var(--d-green); */
+  /* font-family: "Manrope"; */
+  font-family: "Poppins";
+  color: forestgreen;
+  font-weight: bolder;
+}
