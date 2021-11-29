@@ -57,7 +57,7 @@ Domine, Poppin
 
   margin-left: 1em;
   height: 100%;
-  z-index: 1;
+  /* z-index: 1; */
   /* background-color: gray; */
 }
 /*.uDecideLogoTxt::after {
@@ -73,6 +73,12 @@ Domine, Poppin
     z-index: 0;
    background-color: var(--l-green);
   }*/
+
+  /* .uDecideLogoTxt::after{
+    display: inline-block;
+    content: " ";
+    border: solid 2px var(--l-green);
+  } */
 
 .user-nav {
   position: absolute;
@@ -212,4 +218,9 @@ border-radius: 5%;
   font-family: "Poppins";
   color: forestgreen;
   font-weight: bolder;
+}
+
+.contactUs{
+  height: 19%;
+  font-family: "Poppins";
 }
