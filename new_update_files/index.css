@@ -1,0 +1,301 @@
+/* uDecide Color palette
+#6a994e - Dark Green
+#a7c957 - Light Green
+#e5e5e5 - Grey
+#f2e8cf - cream
+Domine, Poppin
+*/
+
+:root {
+  --entry: #a4a4a4;
+  --hover: #e1e1e150;
+  --d-green: #6a994e;
+  --l-green: #a7c957;
+  --yellow: #FFD60A;
+  --grey: #e5e5e5;
+  --cream: #f2e8cf;
+}
+
+.container {
+  max-width: 97%;
+}
+/* NAVBAR NAVBAR NAVBAR */
+/* NAVBAR NAVBAR NAVBAR */
+/* NAVBAR NAVBAR NAVBAR */
+
+.uDecideNavBar {
+  position: relative;
+  margin: 1em 1em 2.5em 1em;
+  max-width: 97%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /*z-index: 1;*/
+
+  /* background-color: red; */
+}
+
+.uDecideLogo {
+  color: var(--d-green);
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: "Poppins";
+
+  margin-left: .5em;
+
+}
+
+.uDecideLogoTxt {
+  font-size: 36px;
+  font-weight: 900;
+  font-family: "Poppins";
+
+  margin-left: .25em;
+  height: 100%;
+  z-index: 1;
+  /* background-color: gray; */
+}
+/*.uDecideLogoTxt::after {
+  display: inline-block;
+  content: "";
+  border-top: 0.1rem solid var(--l-green);
+  margin-left: 0.5em;
+  width: 30em;
+  /* works for now but */
+/* figuring out how to make this scaleable 
+  position: relative;
+  transform: translateY(-500%);
+  z-index: 0;
+ background-color: var(--l-green);
+}*/
+
+.user-nav {
+  position: absolute;
+  right: 1.5%;
+  font-size: 17px;
+  font-family: "Manrope";
+  /* z-index: 1; */
+  background-color: lightgray;
+}
+
+
+/* TABTABTABTAB SECTION */
+/* TABTABTABTAB SECTION */
+/* TABTABTABTAB SECTION */
+
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--l-green);
+}
+
+.uDecideTabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-bottom: 6px solid var(--d-green);
+
+}
+
+.tabItem {
+  background-color: var(--d-green);
+
+  padding: 0em 0.5em;
+
+  font-weight: bold;
+  font-family: "Manrope";
+  font-size: 24px;
+  color: white;
+  letter-spacing: 0.75px;
+}
+
+/* LEFTLEFTLEFT */
+/* LEFTLEFTLEFT */
+/* LEFTLEFTLEFT */
+
+.feed {
+  /* border-top: 6px solid var(--d-green); */
+  font-family: "Poppins";
+  margin-left: 1em;
+  margin-top: 1.5em;
+  /* background-color: red; */
+}
+
+.publicUserPic {
+  font-size: 3em;
+  /* margin-left: 0.5em; */
+  /* background-color: #e5e5e5; */
+}
+
+.entry {
+  margin-top: .75em;
+  margin-bottom: .5em;
+  /* background-color: aqua; */
+}
+
+.publicUserName {
+  /* padding-left: 0em; */
+  font-family: Poppins;
+  font-size: 16x;
+  font-weight: bold;
+}
+
+.publicPosts {
+  background-color: #e5e5e5;
+  padding: 0.35em 0em 0.35em 1em;
+  margin-bottom: 0.35em;
+  /* margin-left: .75em; */
+
+  border-radius: 10px;
+
+  font-weight: bold;
+  font-family: "Domine";
+  font-size: 18px;
+}
+
+.publicPosts p {
+  margin-bottom: 0.25em;
+}
+
+.publicVoteComponent {
+  display: flex;
+
+  padding-left: 1em;
+  padding-bottom: 0em;
+
+  font-family: "Poppins";
+  font-size: 14px;
+  /* background-color: #a7c957; */
+}
+
+.bi-check {
+  color: #6a994e;
+}
+
+/* RIGHTRIGHTRIGHT box */
+/* RIGHTRIGHTRIGHT box */
+/* RIGHTRIGHTRIGHT box */
+
+/* Top Portion */
+
+.selectedPostBox {
+  background-color: var(--l-green);
+  color: white;
+}
+
+.selectedPostTitle h3 {
+  /* color: var(--cream); */
+  font-family: "Poppins";
+  font-size: 36px;
+
+  margin-top: .5em;
+
+  font-weight: bolder;
+  text-align: center;
+}
+
+.selectedInfo {
+  padding: .5em 2em 1.5em 2em;
+  font-size: 16px;
+  font-family: Manrope;
+  font-weight: bolder;
+  align-content: center;
+
+}
+
+.selectedPostVoteComponent{
+  text-align: end;
+  font-size: 14px;
+}
+
+.postDescription{
+  padding: 1em;
+}
+
+/* Bottom Portion */
+/* VOTING VOTING VOTING */
+
+.votingProgress{
+  padding: .5em .5em 0em .5em;
+  color: var(--d-green);
+
+  font-size: 24px;
+  font-weight: bolder;
+  font-family: Poppins;
+
+  text-align: center;
+}
+
+.voteBar1,
+.voteBar2 {
+  color: white;
+  margin-bottom: 1em;
+  padding: .75em;
+
+  font-size: 24px;
+}
+
+.voteBar1{
+  background-color: var(--l-green);
+}
+
+.voteBar2{
+  background-color: var(--d-green);
+}
+
+.voteBar1Display,.voteBar2Display{
+  background-color: var(--yellow);
+}
+
+.voteBar1Display {
+  width: 50%;
+}
+.voteBar2Display {
+  width: 60%;
+}
+
+.voteBar1Text,
+.voteBar2Text {
+  margin-bottom: 0.5em;
+}
+
+.voteBarVotes1,
+.voteBarVotes2 {
+  text-align: center;
+}
+
+/* Load + Footer */
+/* Load + Footer */
+/* Load + Footer */
+
+.nextpageIcon {
+  color: var(--l-green);
+
+  margin-top: 1em;
+  font-size: 2em;
+  text-align: center;
+}
+
+.nextpageIcon p {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.contactUs {
+  /* flex-direction: row-reverse; */
+  text-align: end;
+  margin-right: 10em;
+}
+
+.contactUs a {
+  font-size: 17px;
+  font-family: "Manrope";
+  padding-left: 1em;
+  color: var(--d-green);
+}
