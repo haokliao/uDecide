@@ -42,7 +42,7 @@ class ShowPostPage extends React.Component {
     if (this.state.loading) return <Loading />;
 
     return (
-      <div className="container-fluid text-center">
+      <div className="text-center">
         <div className="row justify-content-center">{this.state.posts}</div>
         <div className="row justify-content-center">{this.state.comments}</div>
       </div>

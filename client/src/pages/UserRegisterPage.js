@@ -1,5 +1,9 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
+import Registration from "../components/Registration";
+import RegistrationTabs from "../components/RegistrationTabs";
+import SignIn from "../components/SignIn";
+import UDecideTitleArea from "../components/UDecideTitleArea";
 import "./userRegisterPage.css"
 //const {tbUser } =require('/register')
 
@@ -200,101 +204,36 @@ class UserRegisterPage extends React.Component {
         </div>
        
     
-    {/* <!-- bootstrap was used for icons and content layout -->*/}
-    <div class="container-fluid tabColorGreen containerSize">
-      
-
-      <div class="row rowHeight">
+    {/* <!-- bootstrap row and col layout for registration/login page -->*/}
+    <div class="tabColorGreen containerSize">
+      <div class="row rowHeight ">
         <div
-          class="
-            col-md-6
+          className="
+            col-sm-6
             d-flex
             flex-column
             justify-content-center
             align-items-center
           "
         >
-          {/*<!-- uDecide title area -->*/}
+          {/*<!-- uDecide left column- title area -->*/}
           <section class="logInTitleArea text-white">
-            <h1 class="uDecideLogo">
-              <div class="textColorLightGreen text-center">:):</div>
-            </h1>
-            <h1 class="text-center">uDecide</h1>
-            <p>
-              a website designed to help
-              <span class="textColorCream">YOU</span> make decisions
-            </p>
+          <UDecideTitleArea />
           </section>
         </div>
         <div
-          class="
-            col-md-6
+          className="
+            col-sm-6
             d-flex
             flex-column
             justify-content-center
             align-items-center
           "
         >
-          {/*<!-- uDecide login and registration form -->*/}
-          <section class="logInInputArea rounded">
-            <ul class="nav nav-tabs">
-              <li class="nav-item">
-                <p class="nav-link text-muted" aria-current="page" 
-                  >SIGN IN</p
-                >
-              </li>
-              <li class="nav-item">
-                <p class="nav-link textColorGreen" href="#">SIGN UP</p>
-              </li>
-            </ul>
-            <form
-              action="#"
-              class="
-                d-flex
-                flex-column
-                justify-content-center
-                align-items-center
-              "
-            >
-              <div class="userNameInput p-1">
-                <label for="username"></label>
-                <input
-                  type="text"
-                  id="username"
-                  name="username"
-                  placeholder="username"
-                />
-              </div>
-              <div class="passwordInput p-1">
-                <label for="password"></label>
-                <input
-                  type="password"
-                  id="password"
-                  name="newPassword"
-                  placeholder="password"
-                />
-              </div>
-              <div class="passwordInput p-1">
-                <label for="confirmPassword"></label>
-                <input
-                  type="password"
-                  id="confirmPassword"
-                  name="confirmPassword"
-                  placeholder="confirm password"
-                />
-              </div>
-              <div class="checkBoxInput p-1">
-                <input type="checkbox" id="staySignedIn" />
-                <label for="staySignedIn">Keep Me Signed In</label>
-              </div>
-              <br />
-              <input
-                type="submit"
-                class="text-white tabColorGreen borderColorGreen w-50 rounded"
-                id="submitButton"
-                value="Sign Up"
-              />
-            </form>
+          {/*<!-- uDecide right column- login and registration form -->*/}
+          <section class="logInInputArea rounded  d-flex flex-column  justify-content-around align-items-center">
+            <RegistrationTabs />
+            <Registration />
           </section>
         </div>
       </div>

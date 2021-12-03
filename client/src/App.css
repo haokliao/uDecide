@@ -43,9 +43,10 @@ Domine, Poppin
 .backgroundColorDarkGreen {
   background-color: var(--d-green);
 }
-/* body{
+body {
   padding: 1.75em;
-} */
+  /* background-color: var(--d-green); */
+}
 .container-fluid {
   /* max-width: 97%; */
   padding: 1.75em;
@@ -54,6 +55,24 @@ Domine, Poppin
 /* NAVBAR NAVBAR NAVBAR */
 /* NAVBAR NAVBAR NAVBAR */
 /* NAVBAR NAVBAR NAVBAR */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--l-green);
+}
+.navItemsGroup3 a:hover {
+  border: solid 2px black;
+  padding: 1em;
+}
+.form-control {
+  padding: 0;
+}
+.formInputArea::placeholder {
+  font-size: 80%;
+}
 
 .uDecideNavBar {
   position: relative;

@@ -24,57 +24,58 @@ function Navigation(props) {
   const [myName] = useState(localStorage.getItem("uname"));
 
   return (
-    <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-3 uDecideNavBar mb-0 container-fluid">
-      <div className="navItemsGroup1">
-      <Link className="navbar-brand" to="/">
-      <span class="uDecideLogo">:):</span>
-        <span class="uDecideLogoTxt">uDecide</span>
-      </Link>
-      </div>
+        <nav className="uDecideNavBar  mb-0">
+          <div className="navItemsGroup1 ">
+          <Link to="/">
+          <span className="uDecideLogo">:):</span>
+          <span className="uDecideLogoTxt">uDecide</span>
+          </Link>
+          </div>
 
-      <div className="navItemsGroup3">
-      <ul className="navbar-nav">
-        <li className="nav-item">
-          <NavLink className="nav-link" exact to="/posts/new">
-            {myName}
-          </NavLink>
-        </li>
-        <li></li>
-        <li className="nav-item">
-          <NavLink className="nav-link" exact to="/about-us">
-            About Us
-          </NavLink>
-        </li>
-        {myName == null ? (
-          <li className="nav-item">
-            <NavLink className="nav-link" exact to="/register">
-              {"Sign In"}
-            </NavLink>
-          </li>
-        ) : (
-          ""
-        )}
-        {myName != null ? (
-          <li className="nav-item">
-            <NavLink className="nav-link" exact to="/log">
-              {/* Hi {myName}! */}<i class="fas fa-user-cog"></i>
-            </NavLink>
-          </li>
-        ) : (
-          ""
-        )}
-        {myName != null ? (
-          <li className="nav-item">
-            <button className="btn backgroundColorDarkGreen" onClick={fnlogOut}>
-              Log Out
-            </button>
-          </li>
-        ) : (
-          ""
-        )}
-      </ul>
-    </div>
-    </nav>
+          <div className="navItemsGroup3 d-flex flex-row justify-content-between align-items-baseline">
+         
+            <h6>
+              <NavLink exact to="/posts/new">
+                {myName}
+              </NavLink>&nbsp;&nbsp;
+            </h6>
+            {/* <li></li> */}
+            <h6>
+              <NavLink exact to="/about-us">
+                About Us
+              </NavLink>&nbsp;&nbsp;
+            </h6>
+            {myName == null ? (
+              <h6>
+                <NavLink exact to="/register">
+                  {"Sign In"}
+                </NavLink>
+              </h6>
+            ) : (
+              ""
+            )}
+            {myName != null ? (
+              <h6>
+                <NavLink  exact to="/log">
+                  {/* Hi {myName}! */}<i className="fas fa-user-cog textColorDarkGreen"></i>
+                </NavLink>&nbsp;&nbsp;
+              </h6>
+            ) : (
+              ""
+            )}
+            {myName != null ? (
+              
+                <button className="btn backgroundColorDarkGreen" onClick={fnlogOut}>
+                  Log Out
+                </button>
+              
+            ) : (
+              ""
+            )}
+        
+        </div>
+        </nav>
+     
   );
 }
 
@@ -83,8 +84,9 @@ class App extends React.Component {
     return (
       <Router>
         <Navigation />
-        <div className="container-fluid text-center">
-          <div className="row justify-content-center">
+        {/* Main bootsrap container and row classes with uDecide NavBar Component*/}
+        <div className="container-fluid text-center" >
+          <div className="row" >
             <Switch>
               <Route path="/posts/new" component={PostFormPage} />
               <Route path="/posts/:id" component={ShowPostPage} />
