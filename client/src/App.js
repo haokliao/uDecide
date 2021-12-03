@@ -24,16 +24,22 @@ function Navigation(props) {
   const [myName] = useState(localStorage.getItem("uname"));
 
   return (
-    <nav className="navbar navbar-expand-sm navbar-dark bg-dark shadow mb-3 container-fluid">
+    <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-3 uDecideNavBar mb-0 container-fluid">
+      <div className="navItemsGroup1">
       <Link className="navbar-brand" to="/">
-        Micro Blog
+      <span class="uDecideLogo">:):</span>
+        <span class="uDecideLogoTxt">uDecide</span>
       </Link>
-      <ul className="navbar-nav mr-auto">
+      </div>
+
+      <div className="navItemsGroup3">
+      <ul className="navbar-nav">
         <li className="nav-item">
           <NavLink className="nav-link" exact to="/posts/new">
-            Create a Micro Post
+            {myName}
           </NavLink>
         </li>
+        <li></li>
         <li className="nav-item">
           <NavLink className="nav-link" exact to="/about-us">
             About Us
@@ -51,7 +57,7 @@ function Navigation(props) {
         {myName != null ? (
           <li className="nav-item">
             <NavLink className="nav-link" exact to="/log">
-              Hi {myName}!
+              {/* Hi {myName}! */}<i class="fas fa-user-cog"></i>
             </NavLink>
           </li>
         ) : (
@@ -59,7 +65,7 @@ function Navigation(props) {
         )}
         {myName != null ? (
           <li className="nav-item">
-            <button className="btn btn-primary" onClick={fnlogOut}>
+            <button className="btn backgroundColorDarkGreen" onClick={fnlogOut}>
               Log Out
             </button>
           </li>
@@ -67,6 +73,7 @@ function Navigation(props) {
           ""
         )}
       </ul>
+    </div>
     </nav>
   );
 }
