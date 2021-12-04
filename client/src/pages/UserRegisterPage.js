@@ -1,10 +1,10 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
-import Registration from "../components/Registration";
+// import Registration from "../components/Registration";
 import RegistrationTabs from "../components/RegistrationTabs";
-import SignIn from "../components/SignIn";
+// import SignIn from "../components/SignIn";
 import UDecideTitleArea from "../components/UDecideTitleArea";
-import "./userRegisterPage.css"
+import "./userRegisterPage.css";
 //const {tbUser } =require('/register')
 
 class UserRegisterPage extends React.Component {
@@ -18,6 +18,14 @@ class UserRegisterPage extends React.Component {
     lastName: "",
     registerSignin: false,
     notFound: false,
+    myname: localStorage.getItem("uname"),
+  };
+
+  onSuccessChange = (newSuccess) => {
+    this.setState({
+      success: newSuccess,
+    });
+    console.log("userRegPage success state change");
   };
 
   contentChanged = (event) => {
@@ -97,6 +105,7 @@ class UserRegisterPage extends React.Component {
   };
 
   saveRegistration = (event) => {
+    console.log("wtf");
     //return tbUser.create({firstName: this.state.firstName, lastName: this.state.lastName, userName: this.state.userName})
 
     fetch("/api/register/", {
@@ -146,9 +155,19 @@ class UserRegisterPage extends React.Component {
       <div className="">
         {errorMessage}
 
-        <div>
-          <button onClick={this.fnReg}>Register</button>
-          <button onClick={this.fnSignin}>Sign In</button>
+        {/* <div>
+          <button
+            className="btn backgroundColorDarkGreen "
+            onClick={this.fnReg}
+          >
+            Register
+          </button>
+          <button
+            className="btn backgroundColorDarkGreen "
+            onClick={this.fnSignin}
+          >
+            Sign In
+          </button>
         </div>
 
         <div className="input-group">
@@ -201,45 +220,42 @@ class UserRegisterPage extends React.Component {
           >
             Login
           </button>
-        </div>
-       
-    
-    {/* <!-- bootstrap row and col layout for registration/login page -->*/}
-    <div class="tabColorGreen containerSize">
-      <div class="row rowHeight ">
-        <div
-          className="
+        </div> */}
+
+        {/* <!-- bootstrap row and col layout for registration/login page -->*/}
+        <div className="tabColorGreen containerSize">
+          <div className="row rowHeight ">
+            <div
+              className="
             col-sm-6
             d-flex
             flex-column
             justify-content-center
             align-items-center
           "
-        >
-          {/*<!-- uDecide left column- title area -->*/}
-          <section class="logInTitleArea text-white">
-          <UDecideTitleArea />
-          </section>
-        </div>
-        <div
-          className="
+            >
+              {/*<!-- uDecide left column- title area -->*/}
+              <section className="logInTitleArea text-white">
+                <UDecideTitleArea />
+              </section>
+            </div>
+            <div
+              className="
             col-sm-6
             d-flex
             flex-column
             justify-content-center
             align-items-center
           "
-        >
-          {/*<!-- uDecide right column- login and registration form -->*/}
-          <section class="logInInputArea rounded  d-flex flex-column  justify-content-around align-items-center">
-            <RegistrationTabs />
-            <Registration />
-          </section>
+            >
+              {/*<!-- uDecide right column- login and registration form -->*/}
+              <section className="logInInputArea rounded  d-flex flex-column  justify-content-around align-items-center">
+                <RegistrationTabs />
+              </section>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    </div>
-   
     );
   }
 }
