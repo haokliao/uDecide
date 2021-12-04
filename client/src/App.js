@@ -85,7 +85,7 @@ class App extends React.Component {
       <Router>
         <Navigation />
         {/* Main bootsrap container and row classes with uDecide NavBar Component*/}
-        <div className="container-fluid text-center" >
+        <div className="container-fluid" >
           <div className="row" >
             <Switch>
               <Route path="/posts/new" component={PostFormPage} />
