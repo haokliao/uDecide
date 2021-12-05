@@ -4,7 +4,7 @@ import { Redirect } from "react-router-dom";
 import RegistrationTabs from "../components/RegistrationTabs";
 // import SignIn from "../components/SignIn";
 import UDecideTitleArea from "../components/UDecideTitleArea";
-import "./userRegisterPage.css";
+import "./css/userRegisterPage.css";
 //const {tbUser } =require('/register')
 
 class UserRegisterPage extends React.Component {

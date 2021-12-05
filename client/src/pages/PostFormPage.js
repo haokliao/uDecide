@@ -57,7 +57,10 @@ class PostFormPage extends React.Component {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ content: comm, pid: this.state.postID }),
+      body: JSON.stringify({
+        content: comm,
+        pid: this.state.postID,
+      }),
     })
       .then((res) => {
         if (res.ok) {
@@ -95,6 +98,7 @@ class PostFormPage extends React.Component {
       body: JSON.stringify({
         content: this.state.content,
         UserId: parseInt(UserId),
+        title: this.state.title,
         // ranNum: newPostNum,
       }),
     })
