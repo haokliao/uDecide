@@ -163,7 +163,7 @@ class PostFormPage extends React.Component {
 
           <div className="row gx-2 d-flex flex-row">
             {/*<!-- Left side Content Area -->*/}
-            <div className="col-sm-6 leftColumn">
+            <div className="col-sm-5 leftColumn">
               <div method="get" id="postSubmission">
                 {/* <PostTitle /> */}
                 <div className="form-group">
@@ -247,7 +247,7 @@ class PostFormPage extends React.Component {
               </div>
             </div>
             {/*<!-- Right side content area -->*/}
-            <div className="col-sm-6 rightColumn">
+            <div className="col-sm-6 offset-1 rightColumn">
               {/* <TitleDisplay /> */}
               <article className="userVotingArea row g-0 font-weight-bold">
                 <h5 className="titleArea text-center labelFontSize">=Title</h5>

@@ -5,13 +5,13 @@ class UDecideTitleArea extends React.Component {
     return (
       <div>
         <h1 className="uDecideLogo">
-          <div className="textColorLightGreen text-center">:):</div>
+          <div className="textColorCream text-center">:):</div>
         </h1>
         <h1 className="text-center">uDecide</h1>
         <p>
-          a website designed to help
-          <span className="textColorCream">YOU</span> make decisions
-        </p>
+          a website designed to help</p>
+        <p><span className="textColorCream">YOU</span> make decisions</p>
+        
       </div>
     );
   }
