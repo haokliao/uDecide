@@ -5,12 +5,12 @@ class PostTitle extends React.Component{
     render(){
         return(
             <div className="form-group">
-            <label for="postTitle"
+            <label htmlFor="postTitle"
               ><h6 className="labelFontSize">Title</h6></label
             >
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               id="postTitle"
               placeholder="What's on your mind?"
             />

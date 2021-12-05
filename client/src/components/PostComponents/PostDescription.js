@@ -5,8 +5,8 @@ class PostDescription extends React.Component{
     render(){
         return(
          <div className="form-group">
-            <label for="postDescription"
-                ><h6 class="labelFontSize">Description</h6></label
+            <label htmlFor="postDescription"
+                ><h6 className="labelFontSize">Description</h6></label
               >
               <textarea
                 className="form-control"

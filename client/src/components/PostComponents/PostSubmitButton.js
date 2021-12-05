@@ -7,7 +7,7 @@ class PostSubmitButton extends React.Component{
         <div>
           <input
               type="submit"
-              class="btn w-100 mt-4 mb-4"
+              className="btn w-100 mt-4 mb-4"
               value="Submit Post"
             />
          </div>
