@@ -68,78 +68,78 @@ class UserRegisterPage extends React.Component {
     });
   };
 
-  fnLogin = (event) => {
-    fetch("/api/register/login", {
-      method: "POST",
-      credentials: "include",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        password: this.state.password,
-        userName: this.state.userName,
-      }),
-    })
-      .then((res) => {
-        if (res.ok) {
-          return res.json();
-        }
+  // fnLogin = (event) => {
+  //   fetch("/api/register/login", {
+  //     method: "POST",
+  //     credentials: "include",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify({
+  //       password: this.state.password,
+  //       userName: this.state.userName,
+  //     }),
+  //   })
+  //     .then((res) => {
+  //       if (res.ok) {
+  //         return res.json();
+  //       }
 
-        throw new Error("Content validation");
-      })
-      .then((post) => {
-        this.setState({
-          success: true,
-        });
-        localStorage.setItem("uname", post.userName);
-        localStorage.setItem("uid", post.id);
-        window.location.reload(false);
-      })
-      .catch((err) => {
-        this.setState({
-          error: true,
-        });
-      });
+  //       throw new Error("Content validation");
+  //     })
+  //     .then((post) => {
+  //       this.setState({
+  //         success: true,
+  //       });
+  //       localStorage.setItem("uname", post.userName);
+  //       localStorage.setItem("uid", post.id);
+  //       window.location.reload(false);
+  //     })
+  //     .catch((err) => {
+  //       this.setState({
+  //         error: true,
+  //       });
+  //     });
 
-    // console.log(this.state.userName + " " + this.state.password)
-  };
+  //   // console.log(this.state.userName + " " + this.state.password)
+  // };
 
-  saveRegistration = (event) => {
-    console.log("wtf");
-    //return tbUser.create({firstName: this.state.firstName, lastName: this.state.lastName, userName: this.state.userName})
+  // saveRegistration = (event) => {
+  //   console.log("wtf");
+  //   //return tbUser.create({firstName: this.state.firstName, lastName: this.state.lastName, userName: this.state.userName})
 
-    fetch("/api/register/", {
-      method: "POST",
-      //method: 'GET',
-      credentials: "include",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        firstName: this.state.firstName,
-        lastName: this.state.lastName,
-        password: this.state.password,
-        userName: this.state.userName,
-      }),
-    })
-      .then((res) => {
-        if (res.ok) {
-          return res.json();
-        }
+  //   fetch("/api/register/", {
+  //     method: "POST",
+  //     //method: 'GET',
+  //     credentials: "include",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify({
+  //       firstName: this.state.firstName,
+  //       lastName: this.state.lastName,
+  //       password: this.state.password,
+  //       userName: this.state.userName,
+  //     }),
+  //   })
+  //     .then((res) => {
+  //       if (res.ok) {
+  //         return res.json();
+  //       }
 
-        throw new Error("Content validation");
-      })
-      .then((post) => {
-        this.setState({
-          success: true,
-        });
-      })
-      .catch((err) => {
-        this.setState({
-          error: true,
-        });
-      });
-  };
+  //       throw new Error("Content validation");
+  //     })
+  //     .then((post) => {
+  //       this.setState({
+  //         success: true,
+  //       });
+  //     })
+  //     .catch((err) => {
+  //       this.setState({
+  //         error: true,
+  //       });
+  //     });
+  // };
 
   render() {
     if (this.state.success) {
@@ -154,73 +154,6 @@ class UserRegisterPage extends React.Component {
     return (
       <div className="">
         {errorMessage}
-
-        {/* <div>
-          <button
-            className="btn backgroundColorDarkGreen "
-            onClick={this.fnReg}
-          >
-            Register
-          </button>
-          <button
-            className="btn backgroundColorDarkGreen "
-            onClick={this.fnSignin}
-          >
-            Sign In
-          </button>
-        </div>
-
-        <div className="input-group">
-          <div
-            style={{ display: this.state.registerSignUp ? "block" : "none" }}
-          >
-            <input
-              id="fname"
-              type="text"
-              placeholder="First Name"
-              value={this.state.firstName}
-              className="form-control mr-3 rounded"
-              onChange={this.firstNameChanged}
-            />
-            <input
-              id="lname"
-              type="text"
-              placeholder="Last Name"
-              value={this.state.lastName}
-              className="form-control mr-3 rounded"
-              onChange={this.lastNameChanged}
-            />
-          </div>
-
-          <input
-            type="text"
-            placeholder="User Name"
-            value={this.state.userName}
-            className="form-control mr-3 rounded"
-            onChange={this.userChanged}
-          />
-          <input
-            placeholder="Password"
-            value={this.state.password}
-            className="form-control mr-3 rounded"
-            type="password"
-            onChange={this.passwordChanged}
-          />
-          <button
-            style={{ display: this.state.registerSignUp ? "block" : "none" }}
-            className="btn btn-primary"
-            onClick={this.saveRegistration}
-          >
-            Register
-          </button>
-          <button
-            style={{ display: this.state.registerSignUp ? "none" : "block" }}
-            className="btn btn-primary"
-            onClick={this.fnLogin}
-          >
-            Login
-          </button>
-        </div> */}
 
         {/* <!-- bootstrap row and col layout for registration/login page -->*/}
         <div className="tabColorGreen containerSize">
@@ -250,6 +183,109 @@ class UserRegisterPage extends React.Component {
             >
               {/*<!-- uDecide right column- login and registration form -->*/}
               <section className="logInInputArea rounded  d-flex flex-column  justify-content-around align-items-center">
+                {/* Surendra's controls, these are for testing. they work too. Skip, go to RegistrationTabs
+                <div>
+                  <div
+                    className="btn-group"
+                    role="group"
+                    aria-label="Basic example"
+                  >
+                    <button
+                      className="btn backgroundColorDarkGreen "
+                      onClick={this.fnSignin}
+                    >
+                      Sign In
+                    </button>
+
+                    <button
+                      className="btn backgroundColorDarkGreen "
+                      onClick={this.fnReg}
+                    >
+                      Register
+                    </button>
+                  </div>
+                  <div
+                    // action="#"
+                    className="d-flex flex-column justify-content-between align-items-center"
+                  >
+                    <div className="input-group">
+                      <div
+                        style={{
+                          display: this.state.registerSignUp ? "block" : "none",
+                        }}
+                      >
+                        <div className="form-group userNameInput p-1">
+                          <input
+                            className="formInputArea"
+                            type="text"
+                            id="fname"
+                            name="firstname"
+                            placeholder="firstname"
+                            value={this.state.firstName}
+                            onChange={this.firstNameChanged}
+                          />
+                        </div>
+                        <div className="form-group userNameInput p-1">
+                          <input
+                            className="formInputArea"
+                            type="text"
+                            id="lname"
+                            name="lastname"
+                            placeholder="lastname"
+                            value={this.state.lastName}
+                            onChange={this.lastNameChanged}
+                          />
+                        </div>
+                      </div>
+                      <div className="form-group userNameInput p-1">
+                        <input
+                          className="formInputArea"
+                          type="text"
+                          id="rusername"
+                          name="username"
+                          placeholder="username"
+                          value={this.state.userName}
+                          onChange={this.userChanged}
+                        />
+                      </div>
+                      <div className="form-group userNameInput p-1">
+                        <input
+                          className="formInputArea"
+                          type="password"
+                          id="rpassword"
+                          name="newPassword"
+                          placeholder="password"
+                          onChange={this.passwordChanged}
+                        />
+                      </div>
+                      <button
+                        style={{
+                          display: this.state.registerSignUp ? "block" : "none",
+                        }}
+                        type="submit"
+                        className="text-white tabColorGreen borderColorGreen w-50 rounded"
+                        id="submitButtonRegister"
+                        value="Sign Up"
+                        onClick={this.saveRegistration}
+                      >
+                        Register
+                      </button>
+                      <button
+                        style={{
+                          display: this.state.registerSignUp ? "none" : "block",
+                        }}
+                        type="submit"
+                        className="text-white tabColorGreen borderColorGreen w-50 rounded"
+                        id="submitButtonSignIn"
+                        value="Sign In"
+                        onClick={this.fnLogin}
+                      >
+                        Login
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                 End surendra's controls.  */}
                 <RegistrationTabs />
               </section>
             </div>

@@ -58,8 +58,7 @@ function Navigation(props) {
         {myName != null ? (
           <h6>
             <NavLink exact to="/log">
-              {/* Hi {myName}! */}
-              <i className="fas fa-user-cog textColorDarkGreen"></i>
+              Hi {myName}!<i className="fas fa-user-cog textColorDarkGreen"></i>
             </NavLink>
             &nbsp;&nbsp;
           </h6>

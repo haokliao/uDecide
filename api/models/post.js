@@ -6,12 +6,28 @@ module.exports = (sequelize, DataTypes) => {
 
   Post.init(
     {
+      title: {
+        type: DataTypes.STRING,
+        validate: {
+          len: [3, 250],
+          notEmpty: true,
+        },
+      },
       content: {
         type: DataTypes.STRING,
         validate: {
           len: [3, 250],
           notEmpty: true,
         },
+      },
+      optOne: {
+        type: DataTypes.STRING,
+      },
+      optTwo: {
+        type: DataTypes.STRING,
+      },
+      optThree: {
+        type: DataTypes.STRING,
       },
       barf: {
         type: DataTypes.INTEGER,

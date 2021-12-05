@@ -79,7 +79,9 @@ class Registration extends React.Component {
         this.setState({
           success: true,
         });
-
+        localStorage.setItem("uname", post.userName);
+        localStorage.setItem("uid", post.id);
+        window.location.reload(false);
         // this.onRegistrationSuccessChange();
       })
       .catch((err) => {
@@ -103,7 +105,7 @@ class Registration extends React.Component {
       <section className="logInInputArea rounded">
         {errorMessage}
 
-        <form
+        <div
           // action="#"
           className="
                 d-flex
@@ -175,7 +177,7 @@ class Registration extends React.Component {
             value="Sign Up"
             onClick={this.saveRegistration}
           />
-        </form>
+        </div>
       </section>
     );
   }
