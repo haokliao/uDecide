@@ -183,6 +183,7 @@ class UserRegisterPage extends React.Component {
             >
               {/*<!-- uDecide right column- login and registration form -->*/}
               <section className="logInInputArea rounded  d-flex flex-column  justify-content-around align-items-center">
+                <RegistrationTabs />
                 {/* Surendra's controls, these are for testing. they work too. Skip, go to RegistrationTabs
                 <div>
                   <div
@@ -286,7 +287,6 @@ class UserRegisterPage extends React.Component {
                   </div>
                 </div>
                  End surendra's controls.  */}
-                <RegistrationTabs />
               </section>
             </div>
           </div>

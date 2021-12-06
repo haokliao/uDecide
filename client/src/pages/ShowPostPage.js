@@ -2,17 +2,32 @@ import React from "react";
 import Post from "../components/Post";
 import Comment from "../components/Comment";
 import Loading from "../components/Loading";
+
 import { Redirect } from "react-router-dom";
 
 class ShowPostPage extends React.Component {
   state = {
     loading: true,
-    posts: [],
+    posts: null,
     notFound: false,
     comments: [],
     error: false,
     success: false,
     content: "",
+  };
+
+  updateTotalVotes = () => {
+    const { id } = this.props.match.params;
+
+    fetch("/api/posts/" + id)
+      .then((res) => res.json())
+      .then((posts) => {
+        this.setState({
+          posts: posts.map((p, ii) => <Post {...p} key={ii} />),
+        });
+      })
+      .catch((err) => console.log("API ERROR: ", err));
+    // console.log(this.state.posts);
   };
 
   componentDidMount() {
@@ -31,7 +46,9 @@ class ShowPostPage extends React.Component {
       .then((comments) => {
         this.setState({
           loading: false,
-          comments: comments.map((p, ii) => <Comment {...p} key={ii} />),
+          comments: comments.map((p, ii) => (
+            <Comment {...p} key={ii} onVote={this.updateTotalVotes} />
+          )),
         });
       })
       .catch((err) => console.log("API ERROR: ", err));

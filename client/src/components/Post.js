@@ -1,12 +1,123 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import BarChart from "../components/BarChart";
+// import { View, Image } from "react-native";
 
-function Post({ content, barf, meh, fire, createdAt, id, title }) {
+//cheating on the images and names! Not being pulled from db
+import imageZero from "../images/izero.jpg";
+import imageOne from "../images/imgone.jpg";
+import imageTwo from "../images/itwo.jpg";
+import imageThree from "../images/ithree.jpg";
+import imageFour from "../images/ifour.jpg";
+import imageFive from "../images/ifive.jpg";
+import imageSix from "../images/isix.jpg";
+
+function Post({
+  content,
+  barf,
+  meh,
+  fire,
+  createdAt,
+  id,
+  title,
+  commTotal,
+  UserId,
+}) {
   // const [barfLocal, setBarf] = useState(barf);
   // const [mehLocal, setMeh] = useState(meh);
   // const [fireLocal, setFire] = useState(fire);
   // const [totalVotes, setTotalVotes] = useState(barf + meh + fire);
   const [stCommentTyped, setCommentState] = useState("");
+
+  //cheating on the images and names! Not being pulled from db
+  let img = "",
+    username = "",
+    usernamelist = [
+      "subZero",
+      "lukeSkyWalker",
+      "happyBirthday",
+      "homer",
+      "bases",
+      "merryChristmas",
+      "happyNewYear",
+    ];
+
+  function whichImage() {
+    let myId = (UserId * 10) % 6;
+    switch (myId) {
+      case 0:
+        img = imageZero;
+        username = usernamelist[myId];
+        break;
+      case 1:
+        img = imageOne;
+        username = usernamelist[myId];
+        break;
+      case 2:
+        img = imageTwo;
+        username = usernamelist[myId];
+        break;
+      case 3:
+        img = imageThree;
+        username = usernamelist[myId];
+        break;
+      case 4:
+        img = imageFour;
+        username = usernamelist[myId];
+        break;
+      case 5:
+        img = imageFive;
+        username = usernamelist[myId];
+        break;
+      case 6:
+        img = imageSix;
+        username = usernamelist[myId];
+        break;
+
+      default:
+        img = imageSix;
+        username = usernamelist[myId];
+        break;
+    }
+  }
+
+  // useEffect(() => {
+  //   // whichImage();
+  //   let myId = (UserId * 10) % 6;
+  //   switch (myId) {
+  //     case 0:
+  //       img = imageZero;
+  //       username = usernamelist[myId];
+  //       break;
+  //     case 1:
+  //       img = imageOne;
+  //       username = usernamelist[myId];
+  //       break;
+  //     case 2:
+  //       img = imageTwo;
+  //       username = usernamelist[myId];
+  //       break;
+  //     case 3:
+  //       img = imageThree;
+  //       username = usernamelist[myId];
+  //       break;
+  //     case 4:
+  //       img = imageFour;
+  //       username = usernamelist[myId];
+  //       break;
+  //     case 5:
+  //       img = imageFive;
+  //       username = usernamelist[myId];
+  //       break;
+  //     case 6:
+  //       img = imageSix;
+  //       username = usernamelist[myId];
+  //       break;
+
+  //     default:
+  //       break;
+  //   }
+  // }, []);
 
   function contentChanged(event) {
     setCommentState(event.target.value);
@@ -82,13 +193,14 @@ function Post({ content, barf, meh, fire, createdAt, id, title }) {
 
   return (
     <div className="col-10 col-md-8 col-lg-7">
+      {whichImage()}
       <article className="userVotingArea row g-0 font-weight-bold">
         <h5 className="titleArea text-center labelFontSize">
           <Link to={"/posts/" + id}>{title}</Link>
         </h5>
         <div className="d-flex flex-row justify-content-between px-3">
           <div className="row flexItem1 mt-1 me-2">
-            <i
+            <img
               className="
                     publicUserPic
                     col-sm-3
@@ -96,16 +208,19 @@ function Post({ content, barf, meh, fire, createdAt, id, title }) {
                     iconSize
                     mt-1
                   "
-            ></i>
+              src={img}
+              alt="j"
+            />
+
             <div className="profileName col-sm-9">
-              <p className="m-0">natureisrad55</p>
+              <p className="m-0">{username}</p>
               <p className="m-0">3 hrs ago</p>
             </div>
           </div>
           <div className="flexItem2">
             <div className="profileVotes">
               <p className="m-1">Total Votes:</p>
-              <p className="m-1 text-center">{"800"}</p>
+              <p className="m-1 text-center">{commTotal}</p>
             </div>
           </div>
         </div>
@@ -120,14 +235,16 @@ function Post({ content, barf, meh, fire, createdAt, id, title }) {
             className="form-control mr-3 rounded"
             onChange={contentChanged}
           />
+
           <Link to={"/posts/" + id}>
             <button className="btn btn-primary" onClick={saveComment}>
               Add Option
             </button>
           </Link>
         </div>
+        <BarChart barf={barf} meh={meh} fire={fire}></BarChart>
+        {/* {console.log(barf)} */}
       </article>
-
       {/* <div className="card mb-4 shadow">
         <div className="card-body card-text"></div>
         <div className="card-footer small text-muted text-right">

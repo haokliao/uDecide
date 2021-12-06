@@ -1,25 +1,25 @@
 # uDecide
+
 CTP Fall Project: uDecide, a website designed to help YOU make decisions
 
 Figma Design File Here : https://www.figma.com/file/Ox84Q9UC6MXAjLjl0b2JLE/uDecide?node-id=0%3A1
 
-
 # Project Starter
+
 A starter repo for building CUNY Tech Prep projects with React, Express.js, and Sequelize.js
 
 ## Stack
 
-*API*
+_API_
 
 - express.js
 - sequelize.js
 
-*React client*
+_React client_
 
 - Built using `create-react-app` and configured to work with the api.
 - Bootstrap 4.x added to `/client/public/index.html`
 - React Router
-
 
 ## Development Setup
 
@@ -44,19 +44,20 @@ createdb -h localhost -U ctp_user app2021_development
 
 > You will create a DB for each project you start based on this repo. For other projects change `app2021_development` to the new apps database name.
 
-*For more details see the [installing postgres guides](https://github.com/CUNYTechPrep/guides#postgresql)*
+_For more details see the [installing postgres guides](https://github.com/CUNYTechPrep/guides#postgresql)_
 
 ### Running the app
 
 For local development you will need two terminals open, one for the api-backend and another for the react-client.
 
-*Clone* this app, then:
+_Clone_ this app, then:
 
 ```bash
 # api-backend terminal 1
 cp .env.example .env
 npm install
 npm run dev
+
 ```
 
 ```bash
@@ -109,8 +110,6 @@ git push heroku main
 
 > This command deploys your main branch. You can change that and deploy a different branch such as: `git push heroku development`
 
-
-
 ## Project Structure
 
 <pre>
@@ -157,6 +156,3 @@ git push heroku main
 ├── package-lock.json
 └── package.json
 </pre>
-
-
-

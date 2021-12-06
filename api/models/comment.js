@@ -9,10 +9,9 @@ module.exports = (sequelize, DataTypes) => {
       //start table field lists
       content: {
         type: DataTypes.STRING,
-        validate: {
-          len: [3, 250],
-          notEmpty: true,
-        },
+        // validate: {
+        //   notEmpty: true,
+        // },
       },
       barf: {
         type: DataTypes.INTEGER,

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 // import { Link } from "react-router-dom";
 
-function Comments({ content, barf, meh, fire, createdAt, id }) {
+function Comments({ content, barf, meh, fire, createdAt, id, postId, onVote }) {
   const [barfLocal, setBarf] = useState(barf);
   const [mehLocal, setMeh] = useState(meh);
   const [fireLocal, setFire] = useState(fire);
@@ -15,6 +15,7 @@ function Comments({ content, barf, meh, fire, createdAt, id }) {
   // }
 
   function fnBarfClick(bmf) {
+    onVote();
     fetch("/api/comments/counter", {
       method: "POST",
       credentials: "include",
@@ -59,24 +60,11 @@ function Comments({ content, barf, meh, fire, createdAt, id }) {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ id, bmf }),
+      body: JSON.stringify({ id, postId, bmf }),
     })
       .then((res) => {
         if (res.ok) {
-          switch (bmf) {
-            case 1:
-              setBarf(barfLocal + 1);
-              break;
-            case 2:
-              setMeh(mehLocal + 1);
-              break;
-            case 3:
-              setFire(fireLocal + 1);
-              break;
-            default:
-              console.log("bmf error");
-              break;
-          }
+          // console.log("bmf ");
 
           return res.json();
         }
@@ -106,12 +94,26 @@ function Comments({ content, barf, meh, fire, createdAt, id }) {
           </div>
           <div className="flexItem2">
             <div className="profileVotes">
-              <p className="m-1">Total Votes:</p>
+              <p className="m-1">Option Votes:</p>
               <p className="m-1 text-center">{totalVotes}</p>
             </div>
           </div>
         </div>
-        <p className="row question contentPadding mt-3">{content}</p>
+        <h5 className="row contentPadding mt-3">{content}</h5>
+        <div className="d-flex flex-row justify-content-center px-3">
+          <button className="btn " onClick={fnBarfClick.bind(this, 1)}>
+            {" "}
+            {"\u{1F922} Barf: " + barfLocal}
+          </button>
+          <button className="btn" onClick={fnBarfClick.bind(this, 2)}>
+            {" "}
+            {" \u{1F612}	 Meh: " + mehLocal}
+          </button>
+          <button className="btn " onClick={fnBarfClick.bind(this, 3)}>
+            {" "}
+            {" \u{1f525} Fire: " + fireLocal}
+          </button>
+        </div>
       </article>
       <div className="card mb-4 shadow">
         {/* <div className="card-body card-text">
@@ -120,19 +122,6 @@ function Comments({ content, barf, meh, fire, createdAt, id }) {
           {content}
         </div> */}
         <div className="card-footer small text-muted text-right">
-          <button onClick={fnBarfClick.bind(this, 1)}>
-            {" "}
-            {"\u{1F922} Barf: " + barfLocal}
-          </button>
-          <button onClick={fnBarfClick.bind(this, 2)}>
-            {" "}
-            {" \u{1F612}	 Meh: " + mehLocal}
-          </button>
-          <button onClick={fnBarfClick.bind(this, 3)}>
-            {" "}
-            {" \u{1f525} Fire: " + fireLocal}
-          </button>
-
           {
             //any content / funchtions here
           }

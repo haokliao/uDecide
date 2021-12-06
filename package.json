@@ -13,9 +13,11 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "mdbreact": "^5.2.0",
     "morgan": "^1.10.0",
     "pg": "^8.7.1",
     "pg-hstore": "^2.3.4",
+    "react-chartjs-2": "^4.0.0",
     "react-router-dom": "^6.0.2",
     "sequelize": "^6.7.0"
   },

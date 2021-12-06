@@ -17,7 +17,7 @@ const { Post } = db;
 
 router.get("/", (req, res) => {
   Post.findAll({}).then((posts) => {
-    //console.log(posts);
+    // console.log(posts);
     return res.json(posts);
   });
 });
@@ -106,35 +106,38 @@ router.delete("/:id", (req, res) => {
 //update barf, meh fire
 
 router.post("/counter", (req, res) => {
-  let { id, bmf } = req.body;
+  let { postId, bmf } = req.body;
 
   switch (bmf) {
     case 1:
-      Post.increment({ barf: 1 }, { where: { id: id } })
+      Post.increment({ barf: 1 }, { where: { id: postId } })
         .then((post) => {
           res.status(201).json(post);
         })
         .catch((err) => {
           res.status(400).json(err);
         });
+      Post.increment({ commTotal: 1 }, { where: { id: postId } });
       break;
     case 2:
-      Post.increment({ meh: 1 }, { where: { id: id } })
+      Post.increment({ meh: 1 }, { where: { id: postId } })
         .then((post) => {
           res.status(201).json(post);
         })
         .catch((err) => {
           res.status(400).json(err);
         });
+      Post.increment({ commTotal: 1 }, { where: { id: postId } });
       break;
     case 3:
-      Post.increment({ fire: 1 }, { where: { id: id } })
+      Post.increment({ fire: 1 }, { where: { id: postId } })
         .then((post) => {
           res.status(201).json(post);
         })
         .catch((err) => {
           res.status(400).json(err);
         });
+      Post.increment({ commTotal: 1 }, { where: { id: postId } });
       break;
     default:
       console.log("bmf error");
