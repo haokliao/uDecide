@@ -10,6 +10,8 @@ function AboutUsPage(props) {
       <span class='navbar-logo'>:):</span>
       <span class='navbar-name'>uDecide</span>
     </div> */}
+
+    {/* class name */}
   
   <div class='d-flex align-items-center min-vh-100'>
 

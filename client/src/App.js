@@ -12,7 +12,7 @@ import ShowPostPage from "./pages/ShowPostPage";
 import AboutUsPage from "./pages/AboutUsPage";
 import UserRegisterPage from "./pages/UserRegisterPage";
 
-import "./App.css";
+import "./App.css"
 
 function Navigation(props) {
   function fnlogOut(event) {

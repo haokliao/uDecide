@@ -1,4 +1,74 @@
-/*.App {
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Manrope:wght@500&family=Poppins:wght@500&family=Slabo+13px&family=Slabo+27px&display=swap');
+
+/* import Fonts from Google Fonts */
+
+/* Domine, Manrope, Poppins, Slabo13 px, Slabo 27px */
+
+:root {
+  --entry: #a4a4a4;
+  --hover: #e1e1e150;
+  --d-green: #6a994e;
+  --l-green: #a7c957;
+  --grey: #e5e5e5;
+  --cream: #f2e8cf;
+}
+.textColorDarkGreen {
+  color: var(--d-green);
+}
+.backgroundColorDarkGreen {
+  background-color: var(--d-green);
+}
+
+
+/* NAVBAR NAVBAR NAVBAR */
+
+.uDecideNavBar {
+  position: relative;
+  margin: 0.75em 1em 0em 0.75em;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  /* background-color: red; */
+}
+
+.navItemsGroup1{
+  font-size: 10px;
+  /* have no idea why this works */
+}
+
+
+
+.uDecideLogoTxt {
+  font-size: 36px;
+  font-family: "Poppins"; 
+  margin-left: .5em; 
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--l-green);
+}
+.navItemsGroup3 a:hover {
+  border: solid 2px black;
+  padding: .5em;
+}
+
+/* .form-control {
+  padding: 0;
+} */
+/* .formInputArea::placeholder {
+  font-size: 80%;
+} */
+
+  /*.App {
   text-align: center;
 }
 
@@ -20,7 +90,7 @@
 .App-link {
   color: #09d3ac;
 }
-*/
+
 /* uDecide Color palette
 #6a994e - Dark Green
 #a7c957 - Light Green
@@ -28,99 +98,3 @@
 #f2e8cf - cream
 Domine, Poppin
 */
-
-:root {
-  --entry: #a4a4a4;
-  --hover: #e1e1e150;
-  --d-green: #6a994e;
-  --l-green: #a7c957;
-  --grey: #e5e5e5;
-  --cream: #f2e8cf;
-}
-.textColorDarkGreen {
-  color: var(--d-green);
-}
-.backgroundColorDarkGreen {
-  background-color: var(--d-green);
-}
-body {
-  padding: 1.75em;
-  /* background-color: var(--d-green); */
-}
-.container-fluid {
-  /* max-width: 97%; */
-  padding: 1.75em;
-}
-
-/* NAVBAR NAVBAR NAVBAR */
-/* NAVBAR NAVBAR NAVBAR */
-/* NAVBAR NAVBAR NAVBAR */
-a {
-  color: black;
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--l-green);
-}
-.navItemsGroup3 a:hover {
-  border: solid 2px black;
-  padding: 1em;
-}
-.form-control {
-  padding: 0;
-}
-.formInputArea::placeholder {
-  font-size: 80%;
-}
-
-.uDecideNavBar {
-  position: relative;
-  margin: 0.75em 1em 4.5em 0.75em;
-  max-width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  /*z-index: 1;*/
-
-  /* background-color: red; */
-}
-
-.uDecideLogo {
-  color: var(--d-green);
-  font-size: 40px;
-  font-weight: 600;
-  font-family: "Poppins";
-}
-
-.uDecideLogoTxt {
-  font-size: 36px;
-  font-weight: 900;
-  font-family: "Poppins";
-
-  margin-left: 1em;
-  height: 100%;
-  /* z-index: 1; */
-  /* background-color: gray; */
-}
-/*.uDecideLogoTxt::after {
-    display: inline-block;
-    content: "";
-    border-top: 0.1rem solid var(--l-green);
-    margin-left: 0.5em;
-    width: 30em;
-    /* works for now but */
-/* figuring out how to make this scaleable 
-    position: relative;
-    transform: translateY(-500%);
-    z-index: 0;
-   background-color: var(--l-green);
-  }*/
-
-/* .uDecideLogoTxt::after{
-    display: inline-block;
-    content: " ";
-    border: solid 2px var(--l-green);
-  } */
