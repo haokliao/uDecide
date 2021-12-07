@@ -9,8 +9,8 @@ class UDecideTitleArea extends React.Component {
         </h1>
         <h1 className="text-center">uDecide</h1>
         <p>
-          a website designed to help</p>
-        <p><span className="textColorCream">YOU</span> make decisions</p>
+          a website designed to </p>
+        <p>help <span className="textColorCream">YOU</span> make decisions</p>
         
       </div>
     );
