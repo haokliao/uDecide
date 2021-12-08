@@ -164,14 +164,15 @@ class PostFormPage extends React.Component {
               Save Post
             </button>
           </div> */}
-          <div className="row tabArea mb-3 mt-5">
+         
+
+          <div className="row gx-2 d-flex justify-content-center flex-row">
+            {/*<!-- Left side Content Area -->*/}
+            <div className="col-sm-5 leftColumn"> 
+            <div className="row tabArea mb-3">
             {/*<!-- <h6 class="createPostTab"><span class="createPostTabTextStyling">Create a Post</span></h6> -->*/}
             <h5 className="badge createPostTab">Create a Post</h5>
           </div>
-
-          <div className="row gx-2 d-flex flex-row">
-            {/*<!-- Left side Content Area -->*/}
-            <div className="col-sm-5 leftColumn">
               <div method="get" id="postSubmission">
                 {/* <PostTitle /> */}
                 <div className="form-group">
@@ -254,9 +255,9 @@ class PostFormPage extends React.Component {
                 </div>
               </div>
             </div>
-            {/*<!-- Right side content area -->*/}
+            {/*<!-- Right side content area -->
             <div className="col-sm-6 offset-1 rightColumn">
-              {/* <TitleDisplay /> */}
+              {/* <TitleDisplay /> 
               <article className="userVotingArea row g-0 font-weight-bold">
                 <h5 className="titleArea text-center labelFontSize">=Title</h5>
                 <div className="d-flex flex-row justify-content-between px-3">
@@ -289,7 +290,7 @@ class PostFormPage extends React.Component {
                 </p>
               </article>
 
-              {/* <VotingProgressDisplay /> */}
+              {/* <VotingProgressDisplay /> 
               <div>
                 <article className="votingOptions row g-0">
                   <h5 className="votingInProgressComponent mt-2 text-center">
@@ -307,9 +308,9 @@ class PostFormPage extends React.Component {
                 </article>
                 {/* <div className="contactUs d-flex justify-content-end align-items-end">
                   About &nbsp;&nbsp;Contact Us
-                </div> */}
+                </div> 
               </div>
-            </div>
+            </div>*/}
           </div>
         </div>
       </div>
