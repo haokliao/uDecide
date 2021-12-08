@@ -2,12 +2,6 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
 import "./css/PostFormPage.css";
-// import OptionComponents from "../components/PostComponents/OptionComponents";
-// import PostDescription from "../components/PostComponents/PostDescription";
-// import PostSubmitButton from "../components/PostComponents/PostSubmitButton";
-// import PostTitle from "../components/PostComponents/PostTitle";
-// import TitleDisplay from "../components/PostComponents/TitleDisplay";
-// import VotingProgressDisplay from "../components/PostComponents/VotingProgressDisplay";
 
 class PostFormPage extends React.Component {
 
@@ -176,7 +170,7 @@ class PostFormPage extends React.Component {
         </div>
 
         <div class="row gx-2 d-flex flex-row">
-          <div class="col-sm-6 col-lg-5 leftColumn">
+          <div class="col-sm-12 col-lg-5 leftColumn">
 
             <div method="get" id="postSubmission">
               {/* <PostTitle /> */}
@@ -249,6 +243,8 @@ class PostFormPage extends React.Component {
                   ></textarea>
                 </div>
               </div>
+
+
               {/* <PostSubmitButton /> */}
               <div>
                 <input
@@ -261,11 +257,12 @@ class PostFormPage extends React.Component {
             </div>
           </div>
 
+          <div class='col-lg-1'></div>
 
           {/* <!-- Right side content area --> */}
-          <div className="col-sm-6 col-lg-6 offset-1 rightColumn">
+          <div className="col-sm-12 col-lg-6  rightColumn">
             <article className="userVotingArea row g-0 font-weight-bold">
-              <h5 className="titleArea text-center labelFontSize">=Title</h5>
+              <h5 className="titleArea text-center ">What's on your mind?</h5>
               <div className="d-flex flex-row justify-content-between px-3">
                 <div className="row flexItem1 mt-1 me-2">
                   <i
@@ -289,10 +286,8 @@ class PostFormPage extends React.Component {
                   </div>
                 </div>
               </div>
-              <p className="row question contentPadding mt-3">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Eligendi dolorem maiores nulla, assumenda beatae similique a
-                voluptatibus.
+              <p className="row desc d-flex text-center mt-3">
+                This is where your description text is going to go!
               </p>
             </article>
 
@@ -302,14 +297,14 @@ class PostFormPage extends React.Component {
                 <h5 className="votingInProgressComponent mt-2 text-center">
                   Voting In Progress
                 </h5>
-                <div className="">
-                  <h6 className="option p-2 mb-2">=Option 1</h6>
+                <div className="option p-3 mb-3">What's your first option?
+                  {/* <h6 className="option p-2 mb-2">What's your first option?</h6> */}
                 </div>
-                <div className="">
-                  <h6 className="option p-2">=Option 2</h6>
+                <div className="option p-3  mb-3">What's your second option?
+                  {/* <h6 className="option p-2">What's your second option?</h6> */}
                 </div>
-                <div className="">
-                  <h6 className="option p-2">=Option 3</h6>
+                <div className="option p-3 mb-3">What's your third option?
+                  {/* <h6 className="option p-2">What's your third option?</h6> */}
                 </div>
               </article>
             </div>

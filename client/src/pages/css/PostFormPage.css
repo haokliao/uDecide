@@ -1,10 +1,7 @@
-/* uDecide Color palette
-#6a994e - Dark Green
-#a7c957 - Light Green
-#e5e5e5 - Grey
-#f2e8cf - cream
-Domine, Poppin
-*/
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Manrope:wght@500&family=Poppins:wght@500&family=Slabo+13px&family=Slabo+27px&display=swap');
+/* import Fonts from Google Fonts */
+
+/* Domine, Manrope, Poppins, Slabo13 px, Slabo 27px */
 
 :root {
   --entry: #a4a4a4;
@@ -13,9 +10,7 @@ Domine, Poppin
   --l-green: #a7c957;
   --grey: #e5e5e5;
   --cream: #f2e8cf;
-}
-.textColorDarkGreen {
-  color: var(--d-green);
+  --voting: #386641;
 }
 
 body{
@@ -25,8 +20,10 @@ body{
 
 .container-fluid {
   /* max-width: 97%; */
-  padding: 1.75em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
+
 
 /* NAVBAR NAVBAR NAVBAR */
 /* NAVBAR NAVBAR NAVBAR */
@@ -60,51 +57,10 @@ body{
 
   margin-left: 1em;
   height: 100%;
-  /* z-index: 1; */
-  /* background-color: gray; */
-}
-/*.uDecideLogoTxt::after {
-      display: inline-block;
-      content: "";
-      border-top: 0.1rem solid var(--l-green);
-      margin-left: 0.5em;
-      width: 30em;
-      /* works for now but */
-/* figuring out how to make this scaleable 
-      position: relative;
-      transform: translateY(-500%);
-      z-index: 0;
-     background-color: var(--l-green);
-    }*/
 
-/* .uDecideLogoTxt::after{
-      display: inline-block;
-      content: " ";
-      border: solid 2px var(--l-green);
-    } */
-
-.user-nav {
-  position: absolute;
-  right: 1.5%;
-  font-size: 17px;
-  font-family: "Manrope";
-  /* z-index: 1; */
-  background-color: lightgray;
 }
 
-/*.user-nav {
-      display: flex;
-      flex-direction: row;
-      /* margin-right: auto; */
-/*justify-content: space-evenly;
-    
-      font-size: 18px;
-      font-family: "Manrope";
-      /*position: absolute;
-      left: 84%;
-      z-index: 1;
-      background-color: lightgray; 
-    }*/
+
 
 /* TABTABTABTAB SECTION */
 /* TABTABTABTAB SECTION */
@@ -139,22 +95,36 @@ a:hover {
   color: white;
   letter-spacing: 0.75px;
 }
+
 .createPostTab {
-  border-bottom: solid var(--l-green);
+  width: 10em;
+  background-color: var(--l-green);
+  margin: 0;
+  font-family: 'Domine';
+  font-size: 18px;
 }
 
-/*Input and Textarea Style*/
+/* CREATEPOST CREATEPOST SECTION */
+/* CREATEPOST CREATEPOST SECTION */
+/* CREATEPOST CREATEPOST SECTION */
 
-.form-control::placeholder {
-  font-size: 80%;
-}
-.labelFontSize {
+.form-group h6{
   font-weight: bold;
+  font-family: 'Domine';
+  font-size: 20px;
 }
 
-/* POSTPOSTPOST SECTION */
-/* POSTPOSTPOST SECTION */
-/* POSTPOSTPOST SECTION */
+.leftColumn input{
+  margin-bottom: 1em;
+  font-family: 'Domine';
+  font-size: 16px;
+}
+
+.leftColumn textarea{
+  margin-bottom: 1em;
+  font-family: 'Domine';
+  font-size: 16px;
+}
 
 .option {
   background-color: var(--l-green);
@@ -173,50 +143,57 @@ a:hover {
   margin-top: 0.75em;
 }
 
-.contentPadding {
-  padding-left: 1.75em;
-  padding-right: 1.75em;
+.btn {
+  background-color: var(--d-green);
+  color: white;
+
 }
 
-.btn {
-  background-color: var(--l-green);
-  color: white;
+/* RIGHT RIGHT RIGHT RIGHT */
+/* RIGHT RIGHT RIGHT RIGHT */
+/* RIGHT RIGHT RIGHT RIGHT */
+
+.titleArea{
+  font-family: "Poppins";
+  font-size: 36px;
+  font-weight: bold;
 }
+
 .iconSize {
   font-size: 1.5em;
 }
 .userVotingArea {
-  /* font-family: "Manrope"; */
   font-family: "Poppins";
   background-color: var(--l-green);
   color: white;
   padding: 2em;
 }
 
-.createPostTab {
-  width: 10em;
-  background-color: var(--l-green);
-  margin: 0;
+
+
+.profileName, .profileVotes {
+  font-family: 'Manrope';
+  font-size: 16px;
 }
-.question {
-  font-size: 80%;
+
+.desc{ 
+  font-family: 'Manrope';
+  font-size: 20px;
 }
-.profileName {
-  font-size: 80%;
+
+.option{
+  font-family: 'Poppins';
+  font-size: 20px;
 }
+
 .tabArea {
   border-bottom: solid 4px var(--l-green);
 }
 
 .votingInProgressComponent {
-  /* color: var(--d-green); */
-  /* font-family: "Manrope"; */
+
   font-family: "Poppins";
-  color: forestgreen;
+  color: var(--voting);
   font-weight: bolder;
 }
 
-.contactUs {
-  height: 19%;
-  font-family: "Poppins";
-}

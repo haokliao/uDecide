@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Manrope:wght@500&family=Poppins:wght@500&family=Slabo+13px&family=Slabo+27px&display=swap');
+/* import Fonts from Google Fonts */
+
+/* Domine, Manrope, Poppins, Slabo13 px, Slabo 27px */
+
 :root {
   --entry: #a4a4a4;
   --hover: #e1e1e150;
