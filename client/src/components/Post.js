@@ -192,7 +192,7 @@ function Post({
   }
 
   return (
-    <div className="col-10 col-md-8 col-lg-7">
+    <div className="col-10 col-md-8 col-lg-7 mt-4">
       {whichImage()}
       <article className="userVotingArea row g-0 font-weight-bold">
         <h5 className="titleArea text-center labelFontSize">
