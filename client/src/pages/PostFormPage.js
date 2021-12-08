@@ -1,7 +1,7 @@
 // import { response } from "express";
 import React from "react";
 import { Redirect } from "react-router-dom";
-import "../components/PostComponents/PostComponentStyle.css";
+import "./css/PostFormPage.css";
 // import OptionComponents from "../components/PostComponents/OptionComponents";
 // import PostDescription from "../components/PostComponents/PostDescription";
 // import PostSubmitButton from "../components/PostComponents/PostSubmitButton";
@@ -150,7 +150,7 @@ class PostFormPage extends React.Component {
     return (
       <div className="container-fluid">
         {/*Components and styles imported from src/Components/PostComponents */}
-        <div className="row">
+        {/* <div className="row"> */}
           {errorMessage}
           {/* <div className="input-group">
             <input
@@ -164,9 +164,8 @@ class PostFormPage extends React.Component {
               Save Post
             </button>
           </div> */}
-         
 
-          <div className="row gx-2 d-flex justify-content-center flex-row">
+          <div className="row d-flex flex-row">
             {/*<!-- Left side Content Area -->*/}
             <div className="col-sm-5 leftColumn"> 
             <div className="row tabArea mb-3">
@@ -255,9 +254,10 @@ class PostFormPage extends React.Component {
                 </div>
               </div>
             </div>
-            {/*<!-- Right side content area -->
+
+
+             {/* <!-- Right side content area --> */}
             <div className="col-sm-6 offset-1 rightColumn">
-              {/* <TitleDisplay /> 
               <article className="userVotingArea row g-0 font-weight-bold">
                 <h5 className="titleArea text-center labelFontSize">=Title</h5>
                 <div className="d-flex flex-row justify-content-between px-3">
@@ -290,7 +290,7 @@ class PostFormPage extends React.Component {
                 </p>
               </article>
 
-              {/* <VotingProgressDisplay /> 
+
               <div>
                 <article className="votingOptions row g-0">
                   <h5 className="votingInProgressComponent mt-2 text-center">
@@ -306,14 +306,12 @@ class PostFormPage extends React.Component {
                     <h6 className="option p-2">=Option 3</h6>
                   </div>
                 </article>
-                {/* <div className="contactUs d-flex justify-content-end align-items-end">
-                  About &nbsp;&nbsp;Contact Us
-                </div> 
               </div>
-            </div>*/}
+            </div> 
+
+
           </div>
         </div>
-      </div>
     );
   }
 }
