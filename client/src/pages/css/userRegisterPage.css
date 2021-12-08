@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Manrope:wght@500&family=Poppins:wght@500&family=Slabo+13px&family=Slabo+27px&display=swap');
+
+/* import Fonts from Google Fonts */
+
+/* Domine, Manrope, Poppins, Slabo13 px, Slabo 27px */
+
+
 :root {
   --entry: #a4a4a4;
   --hover: #e1e1e150;
@@ -22,12 +29,12 @@ h1 {
 .logInInputArea {
   display: flex;
   flex-direction: column;
-  background-color: var(--grey);
+  background-color: #fff;
   justify-content: center;
   align-items: center;
   padding: 2em;
-  height: 50%;
-  width: 50%;
+  /* height: 50%;
+  width: 50%; */
 }
 /* 
 .mainContentArea {
@@ -47,6 +54,18 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   font-size: 1.25em;
+}
+
+/* buttons RIGHT SIDE */
+
+.btn-group{
+  color: var(--grey);
+}
+
+.btn-group p{
+  font-family: 'Slabo 27px';
+  font-size: 42px;
+
 }
 
 

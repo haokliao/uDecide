@@ -166,38 +166,10 @@ class UserRegisterPage extends React.Component {
       <div className="">
         {errorMessage}
 
-        {/* <!-- bootstrap row and col layout for registration/login page -->*/}
 
-        {/* <div className="tabColorGreen containerSize">
-          <div className="row rowHeight ">
-            <div
-              className="
-            col-sm-6
-            d-flex
-            flex-column
-            justify-content-center
-            align-items-center
-          "
-            >
-
-              <section className="logInTitleArea text-white">
-                <UDecideTitleArea />
-              </section>
-            </div>
-            <div
-              className="
-            col-sm-6
-            d-flex
-            flex-column
-            justify-content-center
-            align-items-center
-          "
-      */}
-      <Hero>
-              {/*<!-- uDecide right column- login and registration form -->*/}
-              <section className="logInInputArea">
-                <RegistrationTabs />
-                {/* Surendra's controls, these are for testing. they work too. Skip, go to RegistrationTabs
+        <Hero>
+          {/*<!-- uDecide right column- login and registration form -->*/}
+          <div className='oldinput'>{/* Surendra's controls, these are for testing. they work too. Skip, go to RegistrationTabs
                 <div>
                   <div
                     className="btn-group"
@@ -300,12 +272,15 @@ class UserRegisterPage extends React.Component {
                   </div>
                 </div>
                  End surendra's controls.  */}
-              </section>
-              </Hero>
-            </div>
-      //     </div>
-      //   </div>
-      // </div>
+          </div>
+
+          <section className="logInInputArea">
+            <RegistrationTabs />
+          </section>
+
+        </Hero>
+      </div>
+
     );
   }
 }

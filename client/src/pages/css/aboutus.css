@@ -114,12 +114,12 @@ h1 {
 
 .about-section {
   background-color: #fff;
-  padding: 2em 3em;
+  padding: 1em 1.5em 1em 2em;
 
   font-family: "Slabo 13px";
   font-size: 1.25rem;
   /* line-height: 1.7em; */
-  max-width: 65ch;
+  max-width: 59ch;
 }
 
 /* colors */

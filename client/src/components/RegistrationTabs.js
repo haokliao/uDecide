@@ -2,6 +2,7 @@ import React from "react";
 import "../App.css";
 import SignIn from "./SignIn";
 import Registration from "../components/Registration";
+import "../pages/css/userRegisterPage.css"
 
 class RegistrationTabs extends React.Component {
   state = {
@@ -40,22 +41,23 @@ class RegistrationTabs extends React.Component {
   };
 
   render() {
+
     return (
       <div>
-        <div className="btn-group" role="group" aria-label="Basic example">
+        <div className="btn-group d-flex align-items-center" role="group" aria-label="Basic example">
           <button
             type="button"
-            className="btn backgroundColorDarkGreen "
+            className="btn backgroundColorWhite"
             onClick={this.fnSignin}
           >
-            Sign In
+            <p>Sign In</p>
           </button>
           <button
             type="button"
-            className="btn backgroundColorDarkGreen "
+            className="btn "
             onClick={this.fnReg}
           >
-            Registration
+            <p>Registration</p>
           </button>
         </div>
         <div style={{ display: this.state.registerSignUp ? "block" : "none" }}>

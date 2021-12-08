@@ -305,9 +305,9 @@ class PostFormPage extends React.Component {
                     <h6 className="option p-2">=Option 3</h6>
                   </div>
                 </article>
-                <div className="contactUs d-flex justify-content-end align-items-end">
+                {/* <div className="contactUs d-flex justify-content-end align-items-end">
                   About &nbsp;&nbsp;Contact Us
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

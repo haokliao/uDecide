@@ -106,7 +106,7 @@ class SignIn extends React.Component {
           <br />
           <input
             type="submit"
-            className="text-white tabColorGreen borderColorGreen rounded"
+            className="text-white tabColorGreen borderColorGreen w-50 rounded"
             id="submitButtonSignIn"
             value="Sign In"
             onClick={this.fnLogin}

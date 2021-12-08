@@ -10,7 +10,7 @@ function AboutUsPage(props) {
 
     <Hero>
       <section className='about-section '>
-        <div className='about'> ABOUT</div>
+        <div className='about'>ABOUT</div>
 
         <p>
           Created as a project for CUNY Tech Prep’s Web Development track,
