@@ -10,6 +10,7 @@ import "../components/PostComponents/PostComponentStyle.css";
 // import VotingProgressDisplay from "../components/PostComponents/VotingProgressDisplay";
 
 class PostFormPage extends React.Component {
+
   state = {
     error: false,
     success: false,
@@ -131,7 +132,10 @@ class PostFormPage extends React.Component {
       });
   };
 
+
   render() {
+    document.getElementsByTagName('body')[0].style.backgroundColor = '#fff'
+
     if (this.state.success) return <Redirect to="/" />;
 
     let errorMessage = null;

@@ -17,9 +17,12 @@ Domine, Poppin
 .textColorDarkGreen {
   color: var(--d-green);
 }
-/* body{
+
+body{
     padding: 1.75em;
-  } */
+    background-color: #fff;
+  }
+
 .container-fluid {
   /* max-width: 97%; */
   padding: 1.75em;

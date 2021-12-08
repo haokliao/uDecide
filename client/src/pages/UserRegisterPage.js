@@ -8,18 +8,26 @@ import "./css/userRegisterPage.css";
 //const {tbUser } =require('/register')
 
 class UserRegisterPage extends React.Component {
-  state = {
-    error: false,
-    success: false,
-    content: "",
-    userName: "",
-    password: "",
-    firstName: "",
-    lastName: "",
-    registerSignin: false,
-    notFound: false,
-    myname: localStorage.getItem("uname"),
-  };
+
+  constructor(props){
+    super(props)
+
+    this.state = {
+      error: false,
+      success: false,
+      content: "",
+      userName: "",
+      password: "",
+      firstName: "",
+      lastName: "",
+      registerSignin: false,
+      notFound: false,
+      myname: localStorage.getItem("uname"),
+    };
+
+  }
+
+
 
   onSuccessChange = (newSuccess) => {
     this.setState({
