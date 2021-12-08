@@ -6,28 +6,16 @@
   --grey: #e5e5e5;
   --cream: #f2e8cf;
 }
-a {
-  text-decoration: none;
-}
-.active {
-  border: 0;
-}
-.nav-link:hover {
-  color: var(--l-green);
-}
-/* body {
-  background-color: var(--d-green);
-} */
-.container {
-  margin: auto;
+
+body {
+  height: 100%;
+  background-color: var(--login-bg);
 }
 
-.containerSize {
-  height: 100vh;
-}
 h1 {
-  font-size: 3em;
+  font-size: 120px;
 }
+
 .logInTitleArea {
   font-size: 2em;
 }
@@ -41,16 +29,28 @@ h1 {
   height: 50%;
   width: 50%;
 }
-
+/* 
 .mainContentArea {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+} */
+
+
+.uDecideLogo {
+  font-size: 4em;
 }
-.rowHeight {
-  height: 90%;
+
+.uDecideNavBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.25em;
 }
+
+
+/* colors */
 
 .textColorCream {
   color: var(--cream);
@@ -67,14 +67,4 @@ h1 {
 }
 .textColorLightGreen {
   color: var(--l-green);
-}
-.uDecideLogo {
-  font-size: 4em;
-}
-
-.uDecideNavBar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: 1.25em;
 }

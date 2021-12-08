@@ -3,13 +3,13 @@ import { Redirect } from "react-router-dom";
 // import Registration from "../components/Registration";
 import RegistrationTabs from "../components/RegistrationTabs";
 // import SignIn from "../components/SignIn";
-import UDecideTitleArea from "../components/UDecideTitleArea";
 import "./css/userRegisterPage.css";
+import Hero from "./Hero";
 //const {tbUser } =require('/register')
 
 class UserRegisterPage extends React.Component {
 
-  constructor(props){
+  constructor(props) {
     super(props)
 
     this.state = {
@@ -150,6 +150,9 @@ class UserRegisterPage extends React.Component {
   // };
 
   render() {
+
+    document.getElementsByTagName('body')[0].style.backgroundColor = '#90b753'
+
     if (this.state.success) {
       return <Redirect to="/" />;
     }
@@ -164,7 +167,8 @@ class UserRegisterPage extends React.Component {
         {errorMessage}
 
         {/* <!-- bootstrap row and col layout for registration/login page -->*/}
-        <div className="tabColorGreen containerSize">
+
+        {/* <div className="tabColorGreen containerSize">
           <div className="row rowHeight ">
             <div
               className="
@@ -175,7 +179,7 @@ class UserRegisterPage extends React.Component {
             align-items-center
           "
             >
-              {/*<!-- uDecide left column- title area -->*/}
+
               <section className="logInTitleArea text-white">
                 <UDecideTitleArea />
               </section>
@@ -188,9 +192,10 @@ class UserRegisterPage extends React.Component {
             justify-content-center
             align-items-center
           "
-            >
+      */}
+      <Hero>
               {/*<!-- uDecide right column- login and registration form -->*/}
-              <section className="logInInputArea rounded  d-flex flex-column  justify-content-around align-items-center">
+              <section className="logInInputArea">
                 <RegistrationTabs />
                 {/* Surendra's controls, these are for testing. they work too. Skip, go to RegistrationTabs
                 <div>
@@ -296,10 +301,11 @@ class UserRegisterPage extends React.Component {
                 </div>
                  End surendra's controls.  */}
               </section>
+              </Hero>
             </div>
-          </div>
-        </div>
-      </div>
+      //     </div>
+      //   </div>
+      // </div>
     );
   }
 }
