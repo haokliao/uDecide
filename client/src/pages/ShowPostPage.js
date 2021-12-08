@@ -55,6 +55,10 @@ class ShowPostPage extends React.Component {
   }
 
   render() {
+
+    document.getElementsByTagName('body')[0].style.backgroundColor = '#fff'
+
+
     if (this.state.notFound) return <Redirect to="/" />;
     if (this.state.loading) return <Loading />;
 

@@ -8,7 +8,7 @@ const Hero = (props) => (
         <div className="container-fluid">
           <div className="row">
 
-            <div className="col-lg-5 col-md-5 col-sm-12 ">
+            <div className="col-lg-6 col-md-6 col-sm-12 ">
               {/* <!-- uDecide title area --> */}
               <section className="hero-content">
                 <div className="hero-logo">:):</div>
@@ -22,7 +22,7 @@ const Hero = (props) => (
               </section>
             </div>
 
-            <div className="col-lg-7 col-md-7 col-sm-12">
+            <div className="col-lg-6 col-md-6 col-sm-12">
               {props.children}
             </div>
 

@@ -59,6 +59,9 @@ class PostsListPage extends React.Component {
   }
 
   render() {
+
+    document.getElementsByTagName('body')[0].style.backgroundColor = '#fff'
+
     let UserId = "1";
     if (localStorage.getItem("uname") != null) {
       UserId = localStorage.getItem("uid");
@@ -72,6 +75,7 @@ class PostsListPage extends React.Component {
     }
 
     return (
+
       <div className="container-fluid text-center">
         <div>
           {UserId !== "1" ? (
