@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css";
+// import "../App.css";
 import SignIn from "./SignIn";
 import Registration from "../components/Registration";
 import "../pages/css/userRegisterPage.css"
@@ -43,8 +43,8 @@ class RegistrationTabs extends React.Component {
   render() {
 
     return (
-      <div>
-        <div className="btn-group d-flex align-items-center" role="group" aria-label="Basic example">
+      <section className ='registration'>
+        <div className="btn-group" role="group" aria-label="Basic example">
           <button
             type="button"
             className="btn backgroundColorWhite"
@@ -52,12 +52,13 @@ class RegistrationTabs extends React.Component {
           >
             <p>Sign In</p>
           </button>
+
           <button
-            type="button"
+            type="button backgroundColorWhite"
             className="btn "
             onClick={this.fnReg}
           >
-            <p>Registration</p>
+            <p>Sign Up</p>
           </button>
         </div>
         <div style={{ display: this.state.registerSignUp ? "block" : "none" }}>
@@ -66,7 +67,7 @@ class RegistrationTabs extends React.Component {
         <div style={{ display: this.state.registerSignUp ? "none" : "block" }}>
           <SignIn />
         </div>
-      </div>
+      </section>
     );
   }
 }

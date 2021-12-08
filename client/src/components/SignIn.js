@@ -1,5 +1,6 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
+import "../pages/css/userRegisterPage.css"
 
 class SignIn extends React.Component {
   state = {
@@ -82,7 +83,7 @@ class SignIn extends React.Component {
                 align-items-center
               "
         >
-          <div className="userNameInput p-1">
+          <div className="userNameInput">
             <label htmlFor="username"></label>
             <input
               type="text"
@@ -93,7 +94,7 @@ class SignIn extends React.Component {
               onChange={this.userChanged}
             />
           </div>
-          <div className="passwordInput p-1">
+          <div className="passwordInput">
             <label htmlFor="password"></label>
             <input
               type="password"
@@ -106,7 +107,7 @@ class SignIn extends React.Component {
           <br />
           <input
             type="submit"
-            className="text-white tabColorGreen borderColorGreen w-50 rounded"
+            className="text-white w-50 rounded"
             id="submitButtonSignIn"
             value="Sign In"
             onClick={this.fnLogin}

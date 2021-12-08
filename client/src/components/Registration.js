@@ -114,7 +114,7 @@ class Registration extends React.Component {
                 align-items-center
               "
         >
-          <div className="form-group userNameInput p-1">
+          <div className="form-group userNameInput">
             <label htmlFor="firstname"></label>
             <input
               className="formInputArea"
@@ -125,7 +125,7 @@ class Registration extends React.Component {
               onChange={this.firstNameChanged}
             />
           </div>
-          <div className="form-group lastNameInput p-1">
+          <div className="form-group lastNameInput">
             <label htmlFor="lastname"></label>
             <input
               className="formInputArea"
@@ -137,7 +137,7 @@ class Registration extends React.Component {
             />
           </div>
 
-          <div className="form-group userNameInput p-1">
+          <div className="form-group userNameInput">
             <label htmlFor="username"></label>
             <input
               className="formInputArea"
@@ -148,7 +148,7 @@ class Registration extends React.Component {
               onChange={this.userChanged}
             />
           </div>
-          <div className="form-group passwordInput p-1">
+          <div className="form-group passwordInput">
             <label htmlFor="password"></label>
             <input
               className="formInputArea"
@@ -172,7 +172,7 @@ class Registration extends React.Component {
           <br />
           <input
             type="submit"
-            className="text-white tabColorGreen borderColorGreen w-50 rounded"
+            className="text-white tabColorGreen  w-50 rounded"
             id="submitButtonRegister"
             value="Sign Up"
             onClick={this.saveRegistration}

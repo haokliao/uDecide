@@ -56,7 +56,19 @@ h1 {
   font-size: 1.25em;
 }
 
-/* buttons RIGHT SIDE */
+/* REGISTRATION */
+/* REGISTRATION */
+/* REGISTRATION */
+
+.registration{
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+
+/* REGISTRATION TABS BUTTONS (SIGN IN/SIGN UP) */
+/* REGISTRATION TABS BUTTONS (SIGN IN/SIGN UP) */
+/* REGISTRATION TABS BUTTONS (SIGN IN/SIGN UP) */
 
 .btn-group{
   color: var(--grey);
@@ -65,9 +77,52 @@ h1 {
 .btn-group p{
   font-family: 'Slabo 27px';
   font-size: 42px;
+  margin-bottom: 0;
+
+  ;
+}
+
+.btn-group button{
+  background-color: white;
+  color: var(--grey);
+}
+
+.btn-group :hover{
+  color:var(--d-green);
+}
+
+/* SIGNIN.JS INPUTS*/
+/* SIGNIN.JS INPUTS*/
+/* SIGNIN.JS INPUTS*/
+/* SIGNIN.JS INPUTS*/
+
+.logInInputArea input{
+  margin-bottom: .5em;
+  font-family: 'Slabo 27px';
+  font-size: 25px;
+  border: 1px solid black;
+  padding-left: .5em;
+
+
+  background-color: rgba(229, 229, 229, 0.2);
 
 }
 
+/* submit buttons green */
+/* scuffed fix */
+
+#submitButtonRegister, #submitButtonSignIn{
+  background-color: var(--d-green);
+}
+
+#submitButtonRegister{
+  margin-bottom: .68em;
+}
+
+#submitButtonSignIn{
+  margin-bottom: 5em;
+
+}
 
 /* colors */
 
