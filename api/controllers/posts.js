@@ -16,7 +16,7 @@ const { Post } = db;
 // TODO: Can you spot where we have some duplication below?
 
 router.get("/", (req, res) => {
-  Post.findAll({}).then((posts) => {
+  Post.findAll({ order: [["id", "DESC"]] }).then((posts) => {
     // console.log(posts);
     return res.json(posts);
   });

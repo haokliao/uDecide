@@ -15,16 +15,16 @@ Domine, Poppin
   --cream: #f2e8cf;
 }
 
-.container{
+.container {
   max-width: 97%;
 }
 /* NAVBAR NAVBAR NAVBAR */
 /* NAVBAR NAVBAR NAVBAR */
 /* NAVBAR NAVBAR NAVBAR */
 
-.uDecideNavBar{
+.uDecideNavBar {
   position: relative;
-  margin: .75em 1em 4.5em .75em;
+  margin: 0.75em 1em 4.5em 0.75em;
   max-width: 100%;
   display: flex;
   z-index: 1;
@@ -33,28 +33,27 @@ Domine, Poppin
 }
 
 .uDecideLogo {
-  color:  var(--d-green);
+  color: var(--d-green);
   font-size: 40px;
   font-weight: 600;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 .uDecideLogoTxt {
   font-size: 36px;
   font-weight: 900;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 
   margin-left: 1em;
   height: 100%;
   z-index: 1;
   /* background-color: gray; */
-
 }
-.uDecideLogoTxt::after{
+.uDecideLogoTxt::after {
   display: inline-block;
   content: "";
-  border-top: .1rem solid var(--l-green);
-  margin-left: .5em;
+  border-top: 0.1rem solid var(--l-green);
+  margin-left: 0.5em;
   width: 94.5rem;
   /* works for now but */
   /* figuring out how to make this scaleable */
@@ -64,15 +63,14 @@ Domine, Poppin
   /* background-color: var(--l-green); */
 }
 
-.user-nav{
+.user-nav {
   position: absolute;
   right: 1.5%;
   font-size: 17px;
-  font-family: 'Manrope';
+  font-family: "Manrope";
   /* z-index: 1; */
   /* background-color: lightgray; */
 }
-
 
 /* TABTABTABTAB SECTION */
 /* TABTABTABTAB SECTION */
@@ -82,10 +80,9 @@ a {
   color: black;
   text-decoration: none;
 }
-a:hover{
+a:hover {
   color: var(--l-green);
 }
-
 
 .uDecideTabs {
   display: flex;
@@ -98,33 +95,34 @@ a:hover{
   border-bottom: var(--d-green);
   /* border-radius:5%; */
 
-  padding: 0em .5em;
+  padding: 0em 0.5em;
 
   font-weight: bold;
-  font-family: 'Manrope';
+  font-family: "Manrope";
   font-size: 24px;
   color: white;
-  letter-spacing: .75px;
+  letter-spacing: 0.75px;
 }
 
 /* LEFTLEFTLEFT */
 /* LEFTLEFTLEFT */
 /* LEFTLEFTLEFT */
 
-.feed{
+.feed {
   border-top: 6px solid #6a994e;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 
   /* background-color: red; */
 }
 
-.publicUserPic{
+.publicUserPic {
   font-size: 3em;
-  margin-left: .5em;
-    /* background-color: #e5e5e5; */
+  margin-left: 0.5em;
+
+  /* background-color: #e5e5e5; */
 }
 
-.entry{
+.entry {
   margin-top: 1.25em;
   margin-bottom: 1.25em;
   /* background-color: aqua; */
@@ -138,8 +136,8 @@ a:hover{
 
 .publicPosts {
   background-color: #e5e5e5;
-  padding: .35em 0em .35em 1em;
-  margin-bottom: .35em;
+  padding: 0.35em 0em 0.35em 1em;
+  margin-bottom: 0.35em;
   /* margin-left: .75em; */
 
   border-radius: 10px;
@@ -149,12 +147,11 @@ a:hover{
   font-size: 20px;
 }
 
-.publicPosts p{
-  margin-bottom: .25em;
+.publicPosts p {
+  margin-bottom: 0.25em;
 }
 
-
-.publicVoteComponent{
+.publicVoteComponent {
   display: flex;
 
   padding-left: 1em;
@@ -165,10 +162,9 @@ a:hover{
   /* background-color: #a7c957; */
 }
 
-.bi-check{
+.bi-check {
   color: #6a994e;
 }
-
 
 /* RIGHTRIGHTRIGHT box */
 /* RIGHTRIGHTRIGHT box */
@@ -179,29 +175,28 @@ a:hover{
   padding: 2em 3.5em 0em 3.5em;
 
   color: #fff;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 
   font-size: 25px;
   font-weight: bold;
 }
 
-.selectedPostHead{
+.selectedPostHead {
   /* padding-left: 1em;
   padding-right: 1em; */
 }
 
 .selectedPostText h3 {
   /* color: var(--cream); */
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 55px;
 
   font-weight: bolder;
   text-align: center;
-  letter-spacing: .5px;
-
+  letter-spacing: 0.5px;
 }
 
-.selectedInfo{
+.selectedInfo {
   padding-top: 1em;
   /* color: var(--cream); */
   padding-bottom: 6em;
@@ -214,22 +209,24 @@ a:hover{
 .voteBar1Display {
   background-color: var(--l-green);
   width: 50%;
-
 }
 .voteBar2Display {
   background-color: var(--l-green);
   width: 60%;
 }
 
-.voteBar1,.voteBar2{
+.voteBar1,
+.voteBar2 {
   margin-bottom: 2em;
 }
 
-.voteBar1Text,.voteBar2Text{
-  margin-bottom: .5em;
+.voteBar1Text,
+.voteBar2Text {
+  margin-bottom: 0.5em;
 }
 
-.voteBarVotes1,.voteBarVotes2{
+.voteBarVotes1,
+.voteBarVotes2 {
   text-align: center;
 }
 
@@ -237,7 +234,7 @@ a:hover{
 /* Load + Footer */
 /* Load + Footer */
 
-.nextpageIcon{
+.nextpageIcon {
   color: var(--l-green);
 
   margin-top: 1em;
@@ -245,22 +242,21 @@ a:hover{
   text-align: center;
 }
 
-.nextpageIcon p{
+.nextpageIcon p {
   color: #000;
-  font-family:'Poppins';
+  font-family: "Poppins";
   font-size: 30px;
-  font-weight:bold;
+  font-weight: bold;
 }
 
-.contactUs{
+.contactUs {
   margin-top: 5em;
-  flex-direction:row-reverse;
-
+  flex-direction: row-reverse;
 }
 
-.contactUs a{
+.contactUs a {
   font-size: 17px;
-  font-family: 'Manrope';
+  font-family: "Manrope";
   padding-left: 1em;
-  color:var(--d-green)
+  color: var(--d-green);
 }

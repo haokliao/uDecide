@@ -18,6 +18,7 @@ const { Comments, Post } = db;
 
 router.get("/com", (req, res) => {
   Comments.findAll({
+    order: [["id"]],
     include: {
       model: Post,
       required: true,

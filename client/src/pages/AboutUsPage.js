@@ -4,38 +4,33 @@ import "./css/aboutus.css";
 import Hero from "./Hero";
 
 function AboutUsPage(props) {
-  document.getElementsByTagName('body')[0].style.backgroundColor = '#90b753'
+  document.getElementsByTagName("body")[0].style.backgroundColor = "#90b753";
 
   return (
-
     <Hero>
-      <section className='about-section '>
-        <div className='about'>ABOUT</div>
-
+      <section className="about-section ">
+        <div className="about">ABOUT</div>
         <p>
-          Created as a project for CUNY Tech Prep’s Web Development track,
-          the idea for this site was created through a brief moment of indecisiveness,
-          when we were unexpectedly given the prompt:
+          Created as a project for CUNY Tech Prep’s Web Development track, the
+          idea for this site was created through a brief moment of
+          indecisiveness, trying to figure out what to on our slides in response
+          to:
+        </p>
+        &nbsp;
+        <p>“What would you want to do your project about?”</p>
+        &nbsp;
+        <p>
+          Over the course of a semester, we ended up bringing together our
+          skills and coursework of UI design, front end, and back end
+          development into our baby of a project.
         </p>
         &nbsp;
         <p>
-          “What would you want to do your project about?”
-        </p>
-        &nbsp;
-        <p>
-          Over the course of a semester, we ended up bringing together our skills
-          and coursework of UI design, front end, and back end development into our
-          baby of a project.
-        </p>
-
-        &nbsp;
-        <p>
-          We solved the decision of what project we wanted to make,
-          and you too can use this to help solve decisions in the future!
+          We solved the decision of what project we wanted to make, and you too
+          can use this to help solve decisions in the future!
         </p>
       </section>
     </Hero>
-
   );
 }
 

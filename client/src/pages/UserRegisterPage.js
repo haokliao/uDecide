@@ -8,9 +8,8 @@ import Hero from "./Hero";
 //const {tbUser } =require('/register')
 
 class UserRegisterPage extends React.Component {
-
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
       error: false,
@@ -24,10 +23,7 @@ class UserRegisterPage extends React.Component {
       notFound: false,
       myname: localStorage.getItem("uname"),
     };
-
   }
-
-
 
   onSuccessChange = (newSuccess) => {
     this.setState({
@@ -150,8 +146,7 @@ class UserRegisterPage extends React.Component {
   // };
 
   render() {
-
-    document.getElementsByTagName('body')[0].style.backgroundColor = '#90b753'
+    document.getElementsByTagName("body")[0].style.backgroundColor = "#90b753";
 
     if (this.state.success) {
       return <Redirect to="/" />;
@@ -166,10 +161,10 @@ class UserRegisterPage extends React.Component {
       <div className="">
         {errorMessage}
 
-
         <Hero>
           {/*<!-- uDecide right column- login and registration form -->*/}
-          <div className='oldinput'>{/* Surendra's controls, these are for testing. they work too. Skip, go to RegistrationTabs
+          <div className="oldinput">
+            {/* Surendra's controls, these are for testing. they work too. Skip, go to RegistrationTabs
                 <div>
                   <div
                     className="btn-group"
@@ -277,10 +272,8 @@ class UserRegisterPage extends React.Component {
           <section className="logInInputArea">
             <RegistrationTabs />
           </section>
-
         </Hero>
       </div>
-
     );
   }
 }

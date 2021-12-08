@@ -4,7 +4,6 @@ import { Redirect } from "react-router-dom";
 import "./css/PostFormPage.css";
 
 class PostFormPage extends React.Component {
-
   state = {
     error: false,
     success: false,
@@ -126,9 +125,8 @@ class PostFormPage extends React.Component {
       });
   };
 
-
   render() {
-    document.getElementsByTagName('body')[0].style.backgroundColor = '#fff'
+    document.getElementsByTagName("body")[0].style.backgroundColor = "#fff";
 
     if (this.state.success) return <Redirect to="/" />;
 
@@ -169,9 +167,8 @@ class PostFormPage extends React.Component {
           <h5 className="badge createPostTab">Create a Post</h5>
         </div>
 
-        <div class="row gx-2 d-flex flex-row">
-          <div class="col-sm-12 col-lg-5 leftColumn">
-
+        <div className="row gx-2 d-flex flex-row">
+          <div className="col-sm-12 col-lg-5 leftColumn">
             <div method="get" id="postSubmission">
               {/* <PostTitle /> */}
               <div className="form-group">
@@ -244,7 +241,6 @@ class PostFormPage extends React.Component {
                 </div>
               </div>
 
-
               {/* <PostSubmitButton /> */}
               <div>
                 <input
@@ -257,7 +253,7 @@ class PostFormPage extends React.Component {
             </div>
           </div>
 
-          <div class='col-lg-1'></div>
+          <div class="col-lg-1"></div>
 
           {/* <!-- Right side content area --> */}
           <div className="col-sm-12 col-lg-6  rightColumn">
@@ -291,26 +287,26 @@ class PostFormPage extends React.Component {
               </p>
             </article>
 
-
             <div>
               <article className="votingOptions row g-0">
                 <h5 className="votingInProgressComponent mt-2 text-center">
                   Voting In Progress
                 </h5>
-                <div className="option p-3 mb-3">What's your first option?
+                <div className="option p-3 mb-3">
+                  What's your first option?
                   {/* <h6 className="option p-2 mb-2">What's your first option?</h6> */}
                 </div>
-                <div className="option p-3  mb-3">What's your second option?
+                <div className="option p-3  mb-3">
+                  What's your second option?
                   {/* <h6 className="option p-2">What's your second option?</h6> */}
                 </div>
-                <div className="option p-3 mb-3">What's your third option?
+                <div className="option p-3 mb-3">
+                  What's your third option?
                   {/* <h6 className="option p-2">What's your third option?</h6> */}
                 </div>
               </article>
             </div>
           </div>
-
-
         </div>
       </div>
     );
