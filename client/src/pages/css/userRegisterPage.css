@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Manrope:wght@500&family=Poppins:wght@500&family=Slabo+13px&family=Slabo+27px&display=swap');
+
+/* import Fonts from Google Fonts */
+
+/* Domine, Manrope, Poppins, Slabo13 px, Slabo 27px */
+
+
+:root {
+  --entry: #a4a4a4;
+  --hover: #e1e1e150;
+  --d-green: #6a994e;
+  --l-green: #a7c957;
+  --grey: #e5e5e5;
+  --cream: #f2e8cf;
+}
+
+body {
+  height: 100%;
+  background-color: var(--login-bg);
+}
+
+h1 {
+  font-size: 120px;
+}
+
+.logInTitleArea {
+  font-size: 2em;
+}
+.logInInputArea {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  /* justify-content: center; */
+  align-items: center;
+  padding-top: 1em;
+  /* height: 50%; */
+}
+/* 
+.mainContentArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+} */
+
+
+.uDecideLogo {
+  font-size: 4em;
+}
+
+.uDecideNavBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.25em;
+}
+
+/* REGISTRATION */
+/* REGISTRATION */
+/* REGISTRATION */
+
+.registration{
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+
+/* REGISTRATION TABS BUTTONS (SIGN IN/SIGN UP) */
+/* REGISTRATION TABS BUTTONS (SIGN IN/SIGN UP) */
+/* REGISTRATION TABS BUTTONS (SIGN IN/SIGN UP) */
+
+.btn-group{
+  color: var(--grey);
+}
+
+.btn-group p{
+  font-family: 'Slabo 27px';
+  font-size: 42px;
+  margin-bottom: 0;
+
+  ;
+}
+
+.btn-group button{
+  background-color: white;
+  color: var(--grey);
+}
+
+.btn-group :hover{
+  color:var(--d-green);
+}
+
+/* SIGNIN.JS INPUTS*/
+/* SIGNIN.JS INPUTS*/
+/* SIGNIN.JS INPUTS*/
+/* SIGNIN.JS INPUTS*/
+
+.logInInputArea input{
+  margin-bottom: .5em;
+  font-family: 'Slabo 27px';
+  font-size: 25px;
+  border: 1px solid black;
+  padding-left: .5em;
+
+
+  background-color: rgba(229, 229, 229, 0.2);
+
+}
+
+/* submit buttons green */
+/* scuffed fix */
+
+#submitButtonRegister, #submitButtonSignIn{
+  background-color: var(--d-green);
+}
+
+#submitButtonRegister{
+  margin-bottom: .68em;
+}
+
+#submitButtonSignIn{
+  margin-bottom: 5em;
+}
+
+/* colors */
+
+.textColorCream {
+  color: var(--cream);
+}
+.tabColorGrey {
+  background-color: var(--grey);
+}
+.tabColorGreen {
+  background-color: var(--d-green);
+}
+
+.textColorGreen {
+  color: var(--d-green);
+}
+.textColorLightGreen {
+  color: var(--l-green);
+}

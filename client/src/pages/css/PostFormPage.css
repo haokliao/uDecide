@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Manrope:wght@500&family=Poppins:wght@500&family=Slabo+13px&family=Slabo+27px&display=swap');
+/* import Fonts from Google Fonts */
+
+/* Domine, Manrope, Poppins, Slabo13 px, Slabo 27px */
+
+:root {
+  --entry: #a4a4a4;
+  --hover: #e1e1e150;
+  --d-green: #6a994e;
+  --l-green: #a7c957;
+  --grey: #e5e5e5;
+  --cream: #f2e8cf;
+  --voting: #386641;
+}
+
+body{
+    padding: 1.75em;
+    background-color: #fff;
+  }
+
+.container-fluid {
+  /* max-width: 97%; */
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+
+/* NAVBAR NAVBAR NAVBAR */
+/* NAVBAR NAVBAR NAVBAR */
+/* NAVBAR NAVBAR NAVBAR */
+
+.uDecideNavBar {
+  position: relative;
+  margin: 0.75em 1em 4.5em 0.75em;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /*z-index: 1;*/
+
+  /* background-color: red; */
+}
+
+.uDecideLogo {
+  color: var(--d-green);
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+
+.uDecideLogoTxt {
+  font-size: 36px;
+  font-weight: 900;
+  font-family: "Poppins";
+
+  margin-left: 1em;
+  height: 100%;
+
+}
+
+
+
+/* TABTABTABTAB SECTION */
+/* TABTABTABTAB SECTION */
+/* TABTABTABTAB SECTION */
+
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--l-green);
+}
+
+.uDecideTabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.badge {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.tabItem {
+  background-color: var(--d-green);
+  border-bottom: var(--d-green);
+
+  padding: 0em 0.5em;
+
+  font-weight: bold;
+  font-family: "Manrope";
+  font-size: 24px;
+  color: white;
+  letter-spacing: 0.75px;
+}
+
+.createPostTab {
+  width: 10em;
+  background-color: var(--l-green);
+  margin: 0;
+  font-family: 'Domine';
+  font-size: 18px;
+}
+
+/* CREATEPOST CREATEPOST SECTION */
+/* CREATEPOST CREATEPOST SECTION */
+/* CREATEPOST CREATEPOST SECTION */
+
+.form-group h6{
+  font-weight: bold;
+  font-family: 'Domine';
+  font-size: 20px;
+}
+
+.leftColumn input{
+  margin-bottom: 1em;
+  font-family: 'Domine';
+  font-size: 16px;
+}
+
+.leftColumn textarea{
+  margin-bottom: 1em;
+  font-family: 'Domine';
+  font-size: 16px;
+}
+
+.option {
+  background-color: var(--l-green);
+  color: white;
+}
+.createPostTabTextStyling {
+  display: inline-block;
+  background-color: var(--l-green);
+  color: white;
+  width: 7em;
+  padding: 0.5em;
+  border-radius: 5%;
+}
+
+.publicUserPic {
+  margin-top: 0.75em;
+}
+
+.btn {
+  background-color: var(--d-green);
+  color: white;
+
+}
+
+/* RIGHT RIGHT RIGHT RIGHT */
+/* RIGHT RIGHT RIGHT RIGHT */
+/* RIGHT RIGHT RIGHT RIGHT */
+
+.titleArea{
+  font-family: "Poppins";
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.iconSize {
+  font-size: 1.5em;
+}
+
+/* right for create page and also feed */
+.userVotingArea {
+  font-family: "Poppins";
+  background-color: var(--l-green);
+  color: white;
+  padding: 2em;
+}
+
+
+
+.profileName, .profileVotes {
+  font-family: 'Manrope';
+  font-size: 16px;
+}
+
+.desc{ 
+  font-family: 'Manrope';
+  font-size: 20px;
+}
+
+.option{
+  font-family: 'Poppins';
+  font-size: 20px;
+}
+
+.tabArea {
+  border-bottom: solid 4px var(--l-green);
+}
+
+.votingInProgressComponent {
+
+  font-family: "Poppins";
+  color: var(--voting);
+  font-weight: bolder;
+}
+

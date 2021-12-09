@@ -25,10 +25,8 @@ Domine, Poppin
 
 .uDecideNavBar {
   position: relative;
-
-  margin: 0.75em 1em 4.5em 0.75em;
-  max-width: 100%;
-
+  margin: 1em 1em 2.5em 1em;
+  max-width: 97%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -42,9 +40,10 @@ Domine, Poppin
 .uDecideLogo {
   color: var(--d-green);
   font-size: 40px;
-
-  font-weight: 600;
+  font-weight: bolder;
   font-family: "Poppins";
+
+  margin-left: .5em;
 
 }
 
@@ -58,6 +57,19 @@ Domine, Poppin
   z-index: 1;
   /* background-color: gray; */
 }
+/*.uDecideLogoTxt::after {
+  display: inline-block;
+  content: "";
+  border-top: 0.1rem solid var(--l-green);
+  margin-left: 0.5em;
+  width: 30em;
+  /* works for now but */
+/* figuring out how to make this scaleable 
+  position: relative;
+  transform: translateY(-500%);
+  z-index: 0;
+ background-color: var(--l-green);
+}*/
 
 .user-nav {
   position: absolute;
@@ -67,6 +79,7 @@ Domine, Poppin
   /* z-index: 1; */
   background-color: lightgray;
 }
+
 
 /* TABTABTABTAB SECTION */
 /* TABTABTABTAB SECTION */
@@ -105,26 +118,22 @@ a:hover {
 /* LEFTLEFTLEFT */
 
 .feed {
-
-  border-top: 6px solid #6a994e;
+  /* border-top: 6px solid var(--d-green); */
   font-family: "Poppins";
-
+  margin-left: 1em;
+  margin-top: 1.5em;
   /* background-color: red; */
 }
 
 .publicUserPic {
   font-size: 3em;
-
-  margin-left: 0.5em;
-
+  /* margin-left: 0.5em; */
   /* background-color: #e5e5e5; */
 }
 
 .entry {
-
-  margin-top: 1.25em;
-  margin-bottom: 1.25em;
-
+  margin-top: .75em;
+  margin-bottom: .5em;
   /* background-color: aqua; */
 }
 
@@ -173,10 +182,10 @@ a:hover {
 
 /* Top Portion */
 
-
-  color: #fff;
-  font-family: "Poppins";
-
+.selectedPostBox {
+  background-color: var(--l-green);
+  color: white;
+}
 
 .selectedPostTitle h3 {
   /* color: var(--cream); */
@@ -189,32 +198,49 @@ a:hover {
   text-align: center;
 }
 
+.selectedInfo {
+  padding: .5em 2em 1.5em 2em;
+  font-size: 16px;
+  font-family: Manrope;
+  font-weight: bolder;
+  align-content: center;
 
-.selectedPostHead {
-  /* padding-left: 1em;
-  padding-right: 1em; */
 }
 
-.selectedPostText h3 {
-  /* color: var(--cream); */
-  font-family: "Poppins";
-  font-size: 55px;
+.selectedPostVoteComponent{
+  text-align: end;
+  font-size: 14px;
+}
 
+.postDescription{
+  padding: 1em;
+}
+
+/* Bottom Portion */
+/* VOTING VOTING VOTING */
+
+.votingProgress{
+  padding: .5em .5em 0em .5em;
+  color: var(--d-green);
 
   font-size: 24px;
   font-weight: bolder;
   font-family: Poppins;
 
   text-align: center;
-
-  letter-spacing: 0.5px;
 }
 
-.selectedInfo {
-  padding-top: 1em;
-  /* color: var(--cream); */
-  padding-bottom: 6em;
+.voteBar1,
+.voteBar2 {
+  color: white;
+  margin-bottom: 1em;
+  padding: .75em;
 
+  font-size: 24px;
+}
+
+.voteBar1{
+  background-color: var(--l-green);
 }
 
 .voteBar2{
@@ -232,17 +258,10 @@ a:hover {
   width: 60%;
 }
 
-
-.voteBar1,
-.voteBar2 {
-  margin-bottom: 2em;
-}
-
 .voteBar1Text,
 .voteBar2Text {
   margin-bottom: 0.5em;
 }
-
 
 .voteBarVotes1,
 .voteBarVotes2 {
@@ -269,9 +288,9 @@ a:hover {
 }
 
 .contactUs {
-  margin-top: 5em;
-  flex-direction: row-reverse;
-
+  /* flex-direction: row-reverse; */
+  text-align: end;
+  margin-right: 10em;
 }
 
 .contactUs a {
