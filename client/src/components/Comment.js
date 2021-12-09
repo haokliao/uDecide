@@ -103,15 +103,15 @@ function Comments({ content, barf, meh, fire, createdAt, id, postId, onVote }) {
         <div className="d-flex flex-row justify-content-center px-3">
           <button className="btn " onClick={fnBarfClick.bind(this, 1)}>
             {" "}
-            {"\u{1F922} Barf: " + barfLocal}
+            {"\u{1F600} " + barfLocal}
           </button>
           <button className="btn" onClick={fnBarfClick.bind(this, 2)}>
             {" "}
-            {" \u{1F612}	 Meh: " + mehLocal}
+            {" \u{1F641} " + mehLocal}
           </button>
           <button className="btn " onClick={fnBarfClick.bind(this, 3)}>
             {" "}
-            {" \u{1f525} Fire: " + fireLocal}
+            {" \u{1f525} " + fireLocal}
           </button>
         </div>
       </article>

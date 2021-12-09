@@ -37,16 +37,18 @@ class BarChart extends React.Component {
   //state not used.
   state = {
     data: [
-      { name: "\u{1F922}", value: this.props.barf },
-      { name: " \u{1F612}", value: this.props.meh },
+      { name: "\u{1F600}", value: this.props.barf },
+      // dont want to change the value because wow nightmare
+      // just changing the emoji
+      { name: "\u{1F641}", value: this.props.meh },
       { name: "\u{1f525}", value: this.props.fire },
     ],
   };
 
   render() {
     let chartData = [
-      { name: "\u{1F922}", value: this.props.barf },
-      { name: " \u{1F612}", value: this.props.meh },
+      { name: "\u{1F600}", value: this.props.barf },
+      { name: "\u{1F641}", value: this.props.meh },
       { name: "\u{1f525}", value: this.props.fire },
     ];
 
