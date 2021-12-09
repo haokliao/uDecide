@@ -1,0 +1,226 @@
+/* uDecide Color palette
+#6a994e - Dark Green
+#a7c957 - Light Green
+#e5e5e5 - Grey
+#f2e8cf - cream
+Domine, Poppin
+*/
+
+:root {
+  --entry: #a4a4a4;
+  --hover: #e1e1e150;
+  --d-green: #6a994e;
+  --l-green: #a7c957;
+  --grey: #e5e5e5;
+  --cream: #f2e8cf;
+}
+.textColorDarkGreen{
+  color: var(--d-green);
+}
+/* body{
+  padding: 1.75em;
+} */
+.container-fluid {
+  /* max-width: 97%; */
+  padding: 1.75em;
+}
+
+/* NAVBAR NAVBAR NAVBAR */
+/* NAVBAR NAVBAR NAVBAR */
+/* NAVBAR NAVBAR NAVBAR */
+
+.uDecideNavBar {
+  position: relative;
+  margin: 0.75em 1em 4.5em 0.75em;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /*z-index: 1;*/
+
+  /* background-color: red; */
+}
+
+.uDecideLogo {
+  color: var(--d-green);
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+
+.uDecideLogoTxt {
+  font-size: 36px;
+  font-weight: 900;
+  font-family: "Poppins";
+
+  margin-left: 1em;
+  height: 100%;
+  /* z-index: 1; */
+  /* background-color: gray; */
+}
+/*.uDecideLogoTxt::after {
+    display: inline-block;
+    content: "";
+    border-top: 0.1rem solid var(--l-green);
+    margin-left: 0.5em;
+    width: 30em;
+    /* works for now but */
+/* figuring out how to make this scaleable 
+    position: relative;
+    transform: translateY(-500%);
+    z-index: 0;
+   background-color: var(--l-green);
+  }*/
+
+  /* .uDecideLogoTxt::after{
+    display: inline-block;
+    content: " ";
+    border: solid 2px var(--l-green);
+  } */
+
+.user-nav {
+  position: absolute;
+  right: 1.5%;
+  font-size: 17px;
+  font-family: "Manrope";
+  /* z-index: 1; */
+  background-color: lightgray;
+}
+
+/*.user-nav {
+    display: flex;
+    flex-direction: row;
+    /* margin-right: auto; */
+/*justify-content: space-evenly;
+  
+    font-size: 18px;
+    font-family: "Manrope";
+    /*position: absolute;
+    left: 84%;
+    z-index: 1;
+    background-color: lightgray; 
+  }*/
+
+/* TABTABTABTAB SECTION */
+/* TABTABTABTAB SECTION */
+/* TABTABTABTAB SECTION */
+
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--l-green);
+}
+
+.uDecideTabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.badge{
+  border-bottom-left-radius:0;
+  border-bottom-right-radius:0;
+}
+.tabItem {
+  background-color: var(--d-green);
+  border-bottom: var(--d-green);
+
+
+  padding: 0em 0.5em;
+
+  font-weight: bold;
+  font-family: "Manrope";
+  font-size: 24px;
+  color: white;
+  letter-spacing: 0.75px;
+}
+.createPostTab{
+  border-bottom: solid var(--l-green);
+  
+}
+
+/*Input and Textarea Style*/
+
+.form-control::placeholder{
+  font-size: 80%;
+  
+}
+.labelFontSize{
+  font-weight: bold;
+}
+
+
+/* POSTPOSTPOST SECTION */
+/* POSTPOSTPOST SECTION */
+/* POSTPOSTPOST SECTION */
+
+.option{
+  background-color: var(--l-green);
+  color: white;
+}
+.createPostTabTextStyling{
+display: inline-block;
+background-color: var(--l-green);
+color: white;
+width: 7em;
+padding: .5em;
+border-radius: 5%;
+}
+
+.publicUserPic {
+    margin-top: .75em;
+
+}
+
+.contentPadding{
+    padding-left: 1.75em;
+    padding-right: 1.75em;
+}
+
+.btn{
+  background-color: var(--l-green);
+  color: white;
+}
+.iconSize{
+  font-size: 1.5em;
+}
+.userVotingArea{
+  /* font-family: "Manrope"; */
+  font-family: "Poppins";
+  background-color: var(--l-green);
+  color:white;
+  padding: 2em;
+  
+}
+
+.createPostTab{
+  width:10em;
+  background-color: var(--l-green);
+  margin: 0;
+}
+.question{
+  font-size: 80%;
+
+}
+.profileName{
+  font-size:80%;
+}
+.tabArea{
+  border-bottom: solid 4px var(--l-green);
+}
+
+.votingInProgressComponent{
+  /* color: var(--d-green); */
+  /* font-family: "Manrope"; */
+  font-family: "Poppins";
+  color: forestgreen;
+  font-weight: bolder;
+}
+
+.contactUs{
+  height: 19%;
+  font-family: "Poppins";
+}
