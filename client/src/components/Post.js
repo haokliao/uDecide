@@ -192,9 +192,10 @@ function Post({
   }
 
   return (
-    <div className="col-10 col-md-8 col-lg-7 mt-4">
+    // <div className="col-10 col-md-8 col-lg-7 mt-4">
+    <div className="col-6 mt-4">
       {whichImage()}
-      <article className="userVotingArea row g-0 font-weight-bold">
+      <article className="userVotingArea row g-0 ">
         <h5 className="titleArea text-center labelFontSize">
           <Link to={"/posts/" + id}>{title}</Link>
         </h5>
@@ -227,6 +228,8 @@ function Post({
         <p className="row question contentPadding mt-3">
           <Link to={"/posts/" + id}>{content}</Link>
         </p>
+
+        <BarChart barf={barf} meh={meh} fire={fire}></BarChart>
         <div className="input-group">
           <input
             type="text"
@@ -238,34 +241,13 @@ function Post({
 
           <Link to={"/posts/" + id}>
             <button className="btn btn-primary" onClick={saveComment}>
-              Add Option
+              Add Comment
             </button>
           </Link>
         </div>
-        <BarChart barf={barf} meh={meh} fire={fire}></BarChart>
         {/* {console.log(barf)} */}
       </article>
-      {/* <div className="card mb-4 shadow">
-        <div className="card-body card-text"></div>
-        <div className="card-footer small text-muted text-right">
-          <button onClick={fnBarfClick.bind(this, 1)}>
-            {" "}
-            {"\u{1F922} Barf: " + barfLocal}
-          </button>
-          <button onClick={fnBarfClick.bind(this, 2)}>
-            {" "}
-            {" \u{1F612}	 Meh: " + mehLocal}
-          </button>
-          <button onClick={fnBarfClick.bind(this, 3)}>
-            {" "}
-            {" \u{1f525} Fire: " + fireLocal}
-          </button>
 
-          {
-            //any content / funchtions here
-          }
-        </div>
-      </div> */}
     </div>
   );
 }

@@ -162,6 +162,8 @@ a:hover {
 .iconSize {
   font-size: 1.5em;
 }
+
+/* right for create page and also feed */
 .userVotingArea {
   font-family: "Poppins";
   background-color: var(--l-green);

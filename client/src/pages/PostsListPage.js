@@ -74,19 +74,30 @@ class PostsListPage extends React.Component {
     }
 
     return (
-      <div className="container-fluid text-center">
-        <div>
-          {UserId !== "1" ? (
-            <button className="btn btn-primary" onClick={this.fnPubMy}>
-              {this.state.buttonText}
-            </button>
-          ) : (
-            ""
-          )}
+      <div className="container-fluid">
+        <div className="row tabArea mb-3">
+          <h5 className="badge createPostTab">All Activity</h5>
+          {/* this is used for styling*/}
         </div>
-        <div className="row justify-content-center">
-          {this.state.public ? this.state.posts : this.state.myPosts}
+
+        <div className="row d-flex flex-row">
+          <div className="col-lg-5 leftColumn">
+            {UserId !== "1" ? (
+              <button className="btn btn-primary" onClick={this.fnPubMy}>
+                {this.state.buttonText}
+              </button>
+            ) : (
+              ""
+            )}
+          </div>
+          <div className='col-lg-1'></div>
+          <div className='col-lg-6'></div>
+          <div className="row justify-content-center">
+            {this.state.public ? this.state.posts : this.state.myPosts}
+          </div>
         </div>
+
+
       </div>
     );
   }
