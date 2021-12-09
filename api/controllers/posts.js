@@ -31,10 +31,10 @@ router.post("/", (req, res) => {
     title: title,
   })
     .then((post) => {
-      res.status(201).json(post);
+      return res.status(201).json(post);
     })
     .then((post) => {
-      res.json(post.id);
+      return res.json(post.id);
     })
     .catch((err) => {
       res.status(400).json(err);

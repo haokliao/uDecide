@@ -77,6 +77,7 @@ class PostFormPage extends React.Component {
 
   savePost = (event) => {
     let UserId = "1";
+
     // let newPostNum = 1 + Math.random() * 1000000;
     if (localStorage.getItem("uname") != null) {
       UserId = localStorage.getItem("uid");
@@ -253,7 +254,7 @@ class PostFormPage extends React.Component {
             </div>
           </div>
 
-          <div class="col-lg-1"></div>
+          <div className="col-lg-1"></div>
 
           {/* <!-- Right side content area --> */}
           <div className="col-sm-12 col-lg-6  rightColumn">
