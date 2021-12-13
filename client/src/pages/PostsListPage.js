@@ -89,11 +89,18 @@ class PostsListPage extends React.Component {
             ) : (
               ""
             )}
+            
           </div>
+          <div>
+            {this.state.public ? this.state.posts : this.state.myPosts}
+          </div>
+
+          {/* make this == grey display, figure out showpostpage.html to make it pretty
+          drop comments and add comments on this
+          and then connect right side with maybe this.public or whatever and wahla */}
           <div className='col-lg-1'></div>
           <div className='col-lg-6'></div>
           <div className="row justify-content-center">
-            {this.state.public ? this.state.posts : this.state.myPosts}
           </div>
         </div>
 
