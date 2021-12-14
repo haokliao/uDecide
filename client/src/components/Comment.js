@@ -3,7 +3,7 @@ import "../pages/css/feed.css";
 
 // import { Link } from "react-router-dom";
 
-function Comments({ content, barf, createdAt, id, postId, onVote }) {
+function Comments({ content, barf, createdAt, id, postId, onVote, onVoteDone }) {
   const [barfLocal, setBarf] = useState(barf);
   // const [mehLocal, setMeh] = useState(meh);
   // const [fireLocal, setFire] = useState(fire);
@@ -51,7 +51,9 @@ function Comments({ content, barf, createdAt, id, postId, onVote }) {
 
         throw new Error("Content validation");
       })
-      .then((post) => { })
+      .then((post) => {
+
+      })
       .catch((err) => {
         console.log("error" + id);
       });
@@ -73,7 +75,9 @@ function Comments({ content, barf, createdAt, id, postId, onVote }) {
 
         throw new Error("Content validation");
       })
-      .then((post) => { })
+      .then((post) => {
+        onVoteDone(post);
+      })
       .catch((err) => {
         console.log("error" + id);
       });
@@ -91,16 +95,21 @@ function Comments({ content, barf, createdAt, id, postId, onVote }) {
 
           <h5 className="mb-3 titleArea">{content}</h5>
 
-            <button className="btn " onClick={fnBarfClick.bind(this, 1)}>
-              {"Current Votes: "}
-              {+ barfLocal}
-            </button>
+          <button className="btn " onClick={fnBarfClick.bind(this, 1)}>
+            {"Current Votes: "}
+            {+ barfLocal}
+          </button>
 
         </div>
 
       </div>
     </section>
   );
+}
+
+Comments.defaultProps = {
+  onVote: () => { },
+  onVoteDone: () => { },
 }
 
 export default Comments;

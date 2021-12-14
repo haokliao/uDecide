@@ -72,7 +72,9 @@ class ShowPostPage extends React.Component {
 
           <div className="col-lg-6 leftColumn">
             {this.state.posts}
+            
           </div>
+          
 
           <div className="col-6 rightColumn">
             {this.state.comments}

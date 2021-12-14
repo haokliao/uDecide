@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import BarChart from "../components/BarChart";
+// import BarChart from "../components/BarChart";
 // import { View, Image } from "react-native";
 
 //cheating on the images and names! Not being pulled from db
@@ -12,7 +12,7 @@ import BarChart from "../components/BarChart";
 // import imageFive from "../images/ifive.jpg";
 // import imageSix from "../images/isix.jpg";
 
-function Post({post, setSelectedPost}) {
+function Post({post, setSelectedPost, isActive}) {
   const {
     // content,
     barf,
@@ -169,17 +169,17 @@ function Post({post, setSelectedPost}) {
     // </article>
 
     // <div className="col-10 col-md-8 col-lg-7 mt-4">
-  <article className='row g-0' onClick={() => setSelectedPost(post)}>
+  <article className="row g-0" onClick={() => setSelectedPost(post)}>
     <div className="entry col-12">
 
       {/* entry starts here */}
-      <div className='publicPosts row g-0'>
+      <div className={`publicPosts row g-0 ${isActive ? 'active' : ''}`}>
 
 
       <h5 className="titleArea col-12">
         {whichID()}
-        {/* {title} */}
-        <Link to={"/posts/" + id}>{title}</Link>
+        {title}
+        {/* <Link to={"/posts/" + id}>{title}</Link> */}
       </h5>
 
       {/* <div className="d-flex flex-row justify-content-between px-3"> */}
@@ -200,6 +200,9 @@ function Post({post, setSelectedPost}) {
     </div>
   </article >
   );
+}
+Post.defaultProps = {
+  isActive: false,
 }
 
 export default Post;

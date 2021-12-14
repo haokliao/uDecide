@@ -22,10 +22,16 @@
 .titleArea {
   padding-left: 0em;
   font-family: 'Domine';
-  font-size: 24px;
+  font-size: 10px;
   font-weight: bold;
   text-transform: capitalize;
+}
 
+.entry h5{
+  font-family: 'Domine';
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
 }
  /* LEFTLEFTLEFTLEFT */
 
@@ -35,7 +41,7 @@
 }
 
 .publicPosts {
-  background-color: #e5e5e5;
+  background-color: rgba(229, 229, 229, 0.2);;
   padding: .5em 0em 0.5em 1em;
   /* margin-left: .75em; */
 
@@ -43,6 +49,11 @@
 
   font-family: "Poppins";
   font-size: 14px;
+  cursor: pointer;
+}
+/*  */
+.publicPosts.active {
+  background-color: #d6d6d6;
 }
 
 .publicPosts p {
@@ -55,19 +66,21 @@
   background-color: var(--l-green);
 }
 
-.rightColumn{
-  margin-bottom: 1em;
+
+.userVotingArea h5{
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: lighter;
+  text-transform: capitalize;
 }
 
-
 .selectedPostTitle h3{
-  padding-top: .5em;
-
+  padding: .5em 1em 1em 1em;
   color: #fff;
 
   text-align: center;
   font-family: 'Poppins';
-  font-size: px;
+  font-size: 50px;
   font-weight: bold;
   text-transform: capitalize;
 }
@@ -104,7 +117,6 @@ padding: 0em 2em 2em 2em;
 .options{
   background-color: var(--l-green);
   margin-bottom: 1em;
-  padding: 1em;
 
   font-family: 'Poppins';
   font-size: 20px;

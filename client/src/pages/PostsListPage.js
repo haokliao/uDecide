@@ -3,7 +3,8 @@ import Post from "../components/Post";
 // import Comment from "../components/Comment";
 import Loading from "../components/Loading";
 import { Redirect } from "react-router-dom";
-// import Comments from "../components/Comment";
+import ShowPostPage from "./ShowPostPage";
+import Comment from "../components/Comment";
 // import BarChart from "../components/BarChart";
 
 
@@ -78,6 +79,19 @@ class PostsListPage extends React.Component {
       .catch((err) => console.log("API ERROR: ", err));
   }
 
+  updateTotalVotes = () => {
+    fetch("/api/posts/")
+      .then((res) => res.json())
+      .then((posts) => {
+        this.setState({
+          posts,
+        });
+      })
+      .catch((err) => console.log("API ERROR: ", err));
+    // console.log(this.state.posts);
+  };
+
+
   render() {
     document.getElementsByTagName("body")[0].style.backgroundColor = "#fff";
 
@@ -109,7 +123,7 @@ class PostsListPage extends React.Component {
           {/* left column*/}
           <div className="col-lg-6 leftColumn">
             {postsToDisplay.map((post, index) =>
-              <Post key={index} post={post} setSelectedPost={this.setSelectedPost} />
+              <Post key={index} post={post} setSelectedPost={this.setSelectedPost} isActive={selectedPost && post.id === selectedPost.id} />
             )}
           </div>
 
@@ -142,12 +156,13 @@ class PostsListPage extends React.Component {
             <div className="voting col-12">
               {this.state.selectedPostComments?.map(comment => (
                 <div className="options col-12">
-                  {comment.content}
-
+                  {/* {comment.content} */}
+                  {/* {ShowPostPage.state.comment} */}
                   {/* <button className="btn " onClick={Comment.fnBarfClick.bind(Comment.this, 1)}>
                     {" "}
                     {+ Comment.barfLocal}
-                  </button> */}
+                  </button>   */}
+                  <Comment {...comment} key={comment.id} onVoteDone={this.updateTotalVotes} />
 
                   {/* <BarChart >{selectedPost.BarChart}</BarChart> */}
                 </div>
