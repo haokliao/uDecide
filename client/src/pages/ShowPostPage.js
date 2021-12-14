@@ -62,11 +62,23 @@ class ShowPostPage extends React.Component {
     if (this.state.loading) return <Loading />;
 
     return (
-      <div className="row g-0">
-          <div className="col-6">{this.state.posts}</div>
-            <div className="col-6">{this.state.comments}</div>
-
+      <div className="container-fluid">
+        <div className="row tabArea mb-3">
+          <h5 className="badge createPostTab">All Activity</h5>
+          {/* this is used for styling*/}
         </div>
+
+        <div className="row d-flex">
+
+          <div className="col-lg-6 leftColumn">
+            {this.state.posts}
+          </div>
+
+          <div className="col-6 rightColumn">
+            {this.state.comments}
+          </div>
+        </div>
+      </div>
     );
   }
 }

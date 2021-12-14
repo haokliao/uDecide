@@ -55,6 +55,11 @@
   background-color: var(--l-green);
 }
 
+.rightColumn{
+  margin-bottom: 1em;
+}
+
+
 .selectedPostTitle h3{
   padding-top: .5em;
 

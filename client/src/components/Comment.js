@@ -81,7 +81,7 @@ function Comments({ content, barf, createdAt, id, postId, onVote }) {
 
   return (
     <section className='row'>
-      <div className="col-6 col-md-6 col-lg-6">
+      <div className="rightColumn">
         <div className="userVotingArea font-weight-bold">
 
           {/* <div className="profileVotes">
@@ -89,7 +89,7 @@ function Comments({ content, barf, createdAt, id, postId, onVote }) {
               <p className="m-1 text-center">{totalVotes}</p>
             </div> */}
 
-          <h5 className="mb-3">{content}</h5>
+          <h5 className="mb-3 titleArea">{content}</h5>
 
             <button className="btn " onClick={fnBarfClick.bind(this, 1)}>
               {"Current Votes: "}

@@ -143,6 +143,7 @@ class PostsListPage extends React.Component {
               {this.state.selectedPostComments?.map(comment => (
                 <div className="options col-12">
                   {comment.content}
+
                   {/* <button className="btn " onClick={Comment.fnBarfClick.bind(Comment.this, 1)}>
                     {" "}
                     {+ Comment.barfLocal}
