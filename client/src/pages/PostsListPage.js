@@ -3,8 +3,13 @@ import Post from "../components/Post";
 // import Comment from "../components/Comment";
 import Loading from "../components/Loading";
 import { Redirect } from "react-router-dom";
+// import Comments from "../components/Comment";
+// import BarChart from "../components/BarChart";
+
+
 
 class PostsListPage extends React.Component {
+
   state = {
     posts: [],
     myPosts: [],
@@ -39,7 +44,6 @@ class PostsListPage extends React.Component {
     fetch("/api/comments/" + post.id)
       .then(res => res.json())
       .then(comments => {
-        console.log(comments);
         this.setState({ selectedPost: post, selectedPostComments: comments });
       })
       .catch((err) => console.log("API ERROR: ", err));
@@ -77,9 +81,9 @@ class PostsListPage extends React.Component {
   render() {
     document.getElementsByTagName("body")[0].style.backgroundColor = "#fff";
 
-    let UserId = "1";
+    // let UserId = "1";
     if (localStorage.getItem("uname") != null) {
-      UserId = localStorage.getItem("uid");
+      // UserId = localStorage.getItem("uid");
     }
     if (this.state.success) {
       return <Redirect to="/" />;
@@ -119,7 +123,7 @@ class PostsListPage extends React.Component {
                 <div className="selectedPostTitle col-12">
                   <h3>{selectedPost.title}</h3>
                 </div>
-                
+
                 <div className='selectedInfo row g-0'>
                   <div className="selectedUserName col-lg-6">
                     Submitted by: {selectedPost.UserId}
@@ -139,10 +143,16 @@ class PostsListPage extends React.Component {
               {this.state.selectedPostComments?.map(comment => (
                 <div className="options col-12">
                   {comment.content}
+                  {/* <button className="btn " onClick={Comment.fnBarfClick.bind(Comment.this, 1)}>
+                    {" "}
+                    {+ Comment.barfLocal}
+                  </button> */}
+
+                  {/* <BarChart >{selectedPost.BarChart}</BarChart> */}
                 </div>
               ))}
             </div>
-            
+
 
             {/* {UserId !== "1" ? (
               <button className="btn btn-primary" onClick={this.fnPubMy}>

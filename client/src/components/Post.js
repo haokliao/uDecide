@@ -1,24 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-// import BarChart from "../components/BarChart";
+import BarChart from "../components/BarChart";
 // import { View, Image } from "react-native";
 
 //cheating on the images and names! Not being pulled from db
-import imageZero from "../images/izero.jpg";
-import imageOne from "../images/imgone.jpg";
-import imageTwo from "../images/itwo.jpg";
-import imageThree from "../images/ithree.jpg";
-import imageFour from "../images/ifour.jpg";
-import imageFive from "../images/ifive.jpg";
-import imageSix from "../images/isix.jpg";
+// import imageZero from "../images/izero.jpg";
+// import imageOne from "../images/imgone.jpg";
+// import imageTwo from "../images/itwo.jpg";
+// import imageThree from "../images/ithree.jpg";
+// import imageFour from "../images/ifour.jpg";
+// import imageFive from "../images/ifive.jpg";
+// import imageSix from "../images/isix.jpg";
 
 function Post({post, setSelectedPost}) {
   const {
-    content,
+    // content,
     barf,
-    meh,
-    fire,
-    createdAt,
+    // meh,
+    // fire,
+    // createdAt,
     id,
     title,
     commTotal,
@@ -28,11 +28,12 @@ function Post({post, setSelectedPost}) {
   // const [mehLocal, setMeh] = useState(meh);
   // const [fireLocal, setFire] = useState(fire);
   // const [totalVotes, setTotalVotes] = useState(barf + meh + fire);
-  const [setCommentTyped, setCommentState] = useState("");
+  // setCommentTyped
+  // const [setCommentState] = useState("");
 
   //cheating on the images and names! Not being pulled from db
-  let img = "",
-    username = "",
+  let username = "",
+  // img = "",
     usernamelist = [
       "subZero",
       "lukeSkyWalker",
@@ -43,40 +44,32 @@ function Post({post, setSelectedPost}) {
       "happyNewYear",
     ];
 
-  function whichImage() {
+  function whichID() {
     let myId = (UserId * 10) % 6;
     switch (myId) {
       case 0:
-        img = imageZero;
         username = usernamelist[myId];
         break;
       case 1:
-        img = imageOne;
         username = usernamelist[myId];
         break;
       case 2:
-        img = imageTwo;
         username = usernamelist[myId];
         break;
       case 3:
-        img = imageThree;
         username = usernamelist[myId];
         break;
       case 4:
-        img = imageFour;
         username = usernamelist[myId];
         break;
       case 5:
-        img = imageFive;
         username = usernamelist[myId];
         break;
       case 6:
-        img = imageSix;
         username = usernamelist[myId];
         break;
 
       default:
-        img = imageSix;
         username = usernamelist[myId];
         break;
     }
@@ -84,9 +77,9 @@ function Post({post, setSelectedPost}) {
 
 
 
-  function contentChanged(event) {
-    setCommentState(event.target.value);
-  }
+  // function contentChanged(event) {
+  //   setCommentState(event.target.value);
+  // }
 
   // function fnBarfClick(bmf) {
   //   fetch("/api/posts/counter", {
@@ -184,8 +177,7 @@ function Post({post, setSelectedPost}) {
 
 
       <h5 className="titleArea col-12">
-        {whichImage()}
-        {/* no idea why this keeps username but whatever */}
+        {whichID()}
         {/* {title} */}
         <Link to={"/posts/" + id}>{title}</Link>
       </h5>
@@ -198,7 +190,11 @@ function Post({post, setSelectedPost}) {
           <p className="m-0">Total Votes: {commTotal}</p>
           <p className="m-0">3 hrs ago</p>
         </span>
+
+        {/* <BarChart barf={barf}></BarChart> */}
       </div>
+
+      
 
     </div>
     </div>

@@ -29,6 +29,11 @@
 }
  /* LEFTLEFTLEFTLEFT */
 
+.leftColumn{
+  font-family: 'Poppins';
+  font-size: 20px;
+}
+
 .publicPosts {
   background-color: #e5e5e5;
   padding: .5em 0em 0.5em 1em;
@@ -57,7 +62,7 @@
 
   text-align: center;
   font-family: 'Poppins';
-  font-size: 55px;
+  font-size: px;
   font-weight: bold;
   text-transform: capitalize;
 }
@@ -84,6 +89,7 @@ padding: 0em 2em 2em 2em;
   font-size: 18px;
   color: #fff;
 
+  margin-top: 1em;
 }
 
 .voting{

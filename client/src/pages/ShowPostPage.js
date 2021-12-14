@@ -64,7 +64,6 @@ class ShowPostPage extends React.Component {
     return (
       <div className="row g-0">
           <div className="col-6">{this.state.posts}</div>
-
             <div className="col-6">{this.state.comments}</div>
 
         </div>
