@@ -1,12 +1,14 @@
 import React, { useState } from "react";
+import "../pages/css/left_feed.css";
 
 // import { Link } from "react-router-dom";
 
 function Comments({ content, barf, meh, fire, createdAt, id, postId, onVote }) {
   const [barfLocal, setBarf] = useState(barf);
-  const [mehLocal, setMeh] = useState(meh);
-  const [fireLocal, setFire] = useState(fire);
-  const [totalVotes, setTotalVotes] = useState(barf + meh + fire);
+  // const [mehLocal, setMeh] = useState(meh);
+  // const [fireLocal, setFire] = useState(fire);
+  // + meh + fire
+  const [totalVotes, setTotalVotes] = useState(barf );
 
   // const [stCommentTyped, setCommentState] = useState("");
 
@@ -31,14 +33,14 @@ function Comments({ content, barf, meh, fire, createdAt, id, postId, onVote }) {
               setBarf(barfLocal + 1);
               setTotalVotes(totalVotes + 1);
               break;
-            case 2:
-              setMeh(mehLocal + 1);
-              setTotalVotes(totalVotes + 1);
-              break;
-            case 3:
-              setFire(fireLocal + 1);
-              setTotalVotes(totalVotes + 1);
-              break;
+            // case 2:
+            //   setMeh(mehLocal + 1);
+            //   setTotalVotes(totalVotes + 1);
+            //   break;
+            // case 3:
+            //   setFire(fireLocal + 1);
+            //   setTotalVotes(totalVotes + 1);
+            //   break;
             default:
               console.log("bmf error");
               break;
@@ -78,7 +80,7 @@ function Comments({ content, barf, meh, fire, createdAt, id, postId, onVote }) {
   }
 
   return (
-    <div className="col-10 col-md-8 col-lg-7">
+    <div className="col-6 col-md-6 col-lg-6">
       <article className="userVotingArea row g-0 font-weight-bold">
         <div className="d-flex flex-row justify-content-between px-3">
           <div className="row flexItem1 mt-1 me-2">
@@ -100,33 +102,35 @@ function Comments({ content, barf, meh, fire, createdAt, id, postId, onVote }) {
           </div>
         </div>
         <h5 className="row contentPadding mt-3">{content}</h5>
-        <div className="d-flex flex-row justify-content-center px-3">
+        <div className="d-flex px-3">
           <button className="btn " onClick={fnBarfClick.bind(this, 1)}>
             {" "}
             {"\u{1F600} " + barfLocal}
           </button>
-          <button className="btn" onClick={fnBarfClick.bind(this, 2)}>
+
+          {/* <button className="btn" onClick={fnBarfClick.bind(this, 2)}>
             {" "}
             {" \u{1F641} " + mehLocal}
           </button>
           <button className="btn " onClick={fnBarfClick.bind(this, 3)}>
             {" "}
             {" \u{1f525} " + fireLocal}
-          </button>
+          </button> */}
         </div>
       </article>
-      <div className="card mb-4 shadow">
-        {/* <div className="card-body card-text">
+
+      {/* <div className="card mb-4 shadow">
+        <div className="card-body card-text">
           <Link to={"/posts/" + id}>{content}</Link>
 
           {content}
-        </div> */}
+        </div> 
         <div className="card-footer small text-muted text-right">
           {
             //any content / funchtions here
           }
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -4,6 +4,7 @@ import Comment from "../components/Comment";
 import Loading from "../components/Loading";
 
 import { Redirect } from "react-router-dom";
+import "../pages/css/right_feed.css";
 
 class ShowPostPage extends React.Component {
   state = {

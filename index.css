@@ -171,13 +171,6 @@ a:hover {
 /* RIGHTRIGHTRIGHT box */
 /* RIGHTRIGHTRIGHT box */
 
-/* Top Portion */
-
-
-  color: #fff;
-  font-family: "Poppins";
-
-
 .selectedPostTitle h3 {
   /* color: var(--cream); */
   font-family: "Poppins";
@@ -189,11 +182,6 @@ a:hover {
   text-align: center;
 }
 
-
-.selectedPostHead {
-  /* padding-left: 1em;
-  padding-right: 1em; */
-}
 
 .selectedPostText h3 {
   /* color: var(--cream); */

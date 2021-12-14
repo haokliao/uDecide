@@ -8,6 +8,10 @@ body {
   font-weight: 300;
 }
 
+.chart{
+  margin-left: 1em;
+}
+
 .bar-group .name-label {
   text-anchor: end;
   font-weight: 300;

@@ -13,7 +13,7 @@ class PostsListPage extends React.Component {
     success: false,
     content: "",
     public: true,
-    buttonText: "My Post",
+    buttonText: "My Posts",
   };
 
   fnPubMy = (event) => {
@@ -82,16 +82,6 @@ class PostsListPage extends React.Component {
 
         <div className="row d-flex flex-row">
           <div className="col-lg-5 leftColumn">
-            {UserId !== "1" ? (
-              <button className="btn btn-primary" onClick={this.fnPubMy}>
-                {this.state.buttonText}
-              </button>
-            ) : (
-              ""
-            )}
-            
-          </div>
-          <div>
             {this.state.public ? this.state.posts : this.state.myPosts}
           </div>
 
@@ -99,7 +89,18 @@ class PostsListPage extends React.Component {
           drop comments and add comments on this
           and then connect right side with maybe this.public or whatever and wahla */}
           <div className='col-lg-1'></div>
-          <div className='col-lg-6'></div>
+          <div className='col-lg-6'>
+          {UserId !== "1" ? (
+              <button className="btn btn-primary" onClick={this.fnPubMy}>
+                {this.state.buttonText}
+              </button>
+            ) : (
+              ""
+            )}
+            
+          
+          
+          </div>
           <div className="row justify-content-center">
           </div>
         </div>
