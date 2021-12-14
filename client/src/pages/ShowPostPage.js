@@ -4,7 +4,7 @@ import Comment from "../components/Comment";
 import Loading from "../components/Loading";
 
 import { Redirect } from "react-router-dom";
-import "../pages/css/right_feed.css";
+// import "../pages/css/feed.css";
 
 class ShowPostPage extends React.Component {
   state = {
@@ -24,7 +24,7 @@ class ShowPostPage extends React.Component {
       .then((res) => res.json())
       .then((posts) => {
         this.setState({
-          posts: posts.map((p, ii) => <Post {...p} key={ii} />),
+          posts: posts.map((p, ii) => <Post post={p} key={ii} />),
         });
       })
       .catch((err) => console.log("API ERROR: ", err));
@@ -38,7 +38,7 @@ class ShowPostPage extends React.Component {
       .then((posts) => {
         this.setState({
           loading: false,
-          posts: posts.map((p, ii) => <Post {...p} key={ii} />),
+          posts: posts.map((p, ii) => <Post post={p} key={ii} />),
         });
       })
       .catch((err) => console.log("API ERROR: ", err));
@@ -62,10 +62,12 @@ class ShowPostPage extends React.Component {
     if (this.state.loading) return <Loading />;
 
     return (
-      <div className="text-center">
-        <div className="row justify-content-center">{this.state.posts}</div>
-        <div className="row justify-content-center">{this.state.comments}</div>
-      </div>
+      <div className="row g-0">
+          <div className="col-6">{this.state.posts}</div>
+
+            <div className="col-6">{this.state.comments}</div>
+
+        </div>
     );
   }
 }

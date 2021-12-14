@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Manrope:wght@500&family=Poppins:wght@500&family=Slabo+13px&family=Slabo+27px&display=swap');
+/* import Fonts from Google Fonts */
+
+/* Domine, Manrope, Poppins, Slabo13 px, Slabo 27px */
+
+:root {
+  --entry: #a4a4a4;
+  --hover: #e1e1e150;
+  --d-green: #6a994e;
+  --l-green: #a7c957;
+  --grey: #e5e5e5;
+  --cream: #f2e8cf;
+  --voting: #386641;
+}
+
+.entry {
+  margin-top: 1em;
+
+  /* background-color: var(--grey); */
+}
+
+.titleArea {
+  padding-left: 0em;
+  font-family: 'Domine';
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: capitalize;
+
+}
+ /* LEFTLEFTLEFTLEFT */
+
+.publicPosts {
+  background-color: #e5e5e5;
+  padding: .5em 0em 0.5em 1em;
+  /* margin-left: .75em; */
+
+  border-radius: 10px;
+
+  font-family: "Poppins";
+  font-size: 14px;
+}
+
+.publicPosts p {
+  margin-bottom: 0.25em;
+}
+
+
+ /* RIGHTRIGHTRIGHT */
+.selectedPostBox{
+  background-color: var(--l-green);
+}
+
+.selectedPostTitle h3{
+  padding-top: .5em;
+
+  color: #fff;
+
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 55px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.selectedInfo{
+padding: 0em 2em 2em 2em;
+}
+
+.selectedUserName, .selectedPostVoteComponent{
+  font-family: 'Domine';
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #fff;
+
+  padding: 0em 2em;
+}
+
+.selectedPostVoteComponent{
+  text-align: end;
+}
+
+.postDescription{
+  font-family: 'Manrope';
+  font-size: 18px;
+  color: #fff;
+
+}
+
+.voting{
+  margin-top: 1em;
+}
+
+.options{
+  background-color: var(--l-green);
+  margin-bottom: 1em;
+  padding: 1em;
+
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: lighter;
+  text-transform: capitalize;
+  color: #fff;
+
+}

@@ -12,22 +12,23 @@ import imageFour from "../images/ifour.jpg";
 import imageFive from "../images/ifive.jpg";
 import imageSix from "../images/isix.jpg";
 
-function Post({
-  content,
-  barf,
-  meh,
-  fire,
-  createdAt,
-  id,
-  title,
-  commTotal,
-  UserId,
-}) {
+function Post({post, setSelectedPost}) {
+  const {
+    content,
+    barf,
+    meh,
+    fire,
+    createdAt,
+    id,
+    title,
+    commTotal,
+    UserId
+  } = post;
   // const [barfLocal, setBarf] = useState(barf);
   // const [mehLocal, setMeh] = useState(meh);
   // const [fireLocal, setFire] = useState(fire);
   // const [totalVotes, setTotalVotes] = useState(barf + meh + fire);
-  const [stCommentTyped, setCommentState] = useState("");
+  const [setCommentTyped, setCommentState] = useState("");
 
   //cheating on the images and names! Not being pulled from db
   let img = "",
@@ -134,7 +135,7 @@ function Post({
   //     headers: {
   //       "Content-Type": "application/json",
   //     },
-  //     body: JSON.stringify({ content: stCommentTyped, pid: id }),
+  //     body: JSON.stringify({ content: setCommentTyped, pid: id }),
   //   })
   //     .then((res) => {
   //       if (res.ok) {
@@ -175,7 +176,7 @@ function Post({
     // </article>
 
     // <div className="col-10 col-md-8 col-lg-7 mt-4">
-  <article className='row g-0'>
+  <article className='row g-0' onClick={() => setSelectedPost(post)}>
     <div className="entry col-12">
 
       {/* entry starts here */}
@@ -185,6 +186,7 @@ function Post({
       <h5 className="titleArea col-12">
         {whichImage()}
         {/* no idea why this keeps username but whatever */}
+        {/* {title} */}
         <Link to={"/posts/" + id}>{title}</Link>
       </h5>
 

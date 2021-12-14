@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../pages/css/left_feed.css";
+import "../pages/css/feed.css";
 
 // import { Link } from "react-router-dom";
 
@@ -80,7 +80,7 @@ function Comments({ content, barf, meh, fire, createdAt, id, postId, onVote }) {
   }
 
   return (
-    <div className="col-6 col-md-6 col-lg-6">
+    <div className="col-12 col-md-6 col-lg-6">
       <article className="userVotingArea row g-0 font-weight-bold">
         <div className="d-flex flex-row justify-content-between px-3">
           <div className="row flexItem1 mt-1 me-2">
@@ -96,7 +96,7 @@ function Comments({ content, barf, meh, fire, createdAt, id, postId, onVote }) {
           </div>
           <div className="flexItem2">
             <div className="profileVotes">
-              <p className="m-1">Option Votes:</p>
+              <p className="m-1">Option Votes:asdas</p>
               <p className="m-1 text-center">{totalVotes}</p>
             </div>
           </div>

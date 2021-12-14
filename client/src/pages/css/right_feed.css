@@ -28,6 +28,33 @@
 
 }
 
+.selectedPostTitle h3 {
+  /* color: var(--cream); */
+  font-family: "Poppins";
+  font-size: 36px;
+
+  margin-top: .5em;
+
+  font-weight: bolder;
+  text-align: center;
+}
+
+
+.selectedPostText h3 {
+  /* color: var(--cream); */
+  font-family: "Poppins";
+  font-size: 55px;
+
+
+  font-size: 24px;
+  font-weight: bolder;
+  font-family: Poppins;
+
+  text-align: center;
+
+  letter-spacing: 0.5px;
+}
+
 .publicPosts {
   background-color: var(--d-green);
   padding: 0.35em 0em 0.35em 1em;
@@ -44,8 +71,6 @@
   margin-bottom: 0.25em;
 }
 
-
-
-.bi-check {
-  color: #6a994e;
+.options{
+  margin: 1em;
 }

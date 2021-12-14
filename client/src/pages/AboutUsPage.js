@@ -8,7 +8,7 @@ function AboutUsPage(props) {
 
   return (
     <Hero>
-      <section className="about-section ">
+      <section className="about-section">
         <div className="about">ABOUT</div>
         <p>
           Created as a project for CUNY Tech Prep’s Web Development track, the
