@@ -1,14 +1,39 @@
 # uDecide
 
-CTP Fall Project: uDecide, a website designed to help YOU make decisions
-
 Figma Design File Here : https://www.figma.com/file/Ox84Q9UC6MXAjLjl0b2JLE/uDecide?node-id=0%3A1
+
+
+Created as a project for CUNY Tech Prep’s Web Development track, the
+idea for this site was created through a brief moment of
+indecisiveness, trying to figure out what to on our slides in response
+to:
+
+&nbsp;
+
+“What would you want to do your project about?”</p>
+
+&nbsp;
+
+Over the course of a semester, we ended up bringing together our
+skills and coursework of UI design, front end, and back end
+development into our baby of a project.
+
+&nbsp;
+
+We solved the decision of what project we wanted to make, and you too
+can use this to help make decisions in the future!
+
+&nbsp;
+
+
+
 
 # Project Starter
 
 A starter repo for building CUNY Tech Prep projects with React, Express.js, and Sequelize.js
 
 ## Stack
+
 
 _API_
 
