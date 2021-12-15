@@ -3,8 +3,8 @@ import React from "react";
 import "../pages/css/barchart.css";
 
 function BarGroup(props) {
-  let barPadding = 2;
-  let barColour = "#348AA7";
+  let barPadding = 3;
+  let barColour = "#FFD60A";
   let widthScale = (d) => d * 2;
 
   let width = widthScale(props.d.value);
@@ -37,19 +37,19 @@ class BarChart extends React.Component {
   //state not used.
   state = {
     data: [
-      { name: "\u{1F600}", value: this.props.barf },
+      { name: "\u{1F600}", value: this.props.barf }
       // dont want to change the value because wow nightmare
       // just changing the emoji
-      { name: "\u{1F641}", value: this.props.meh },
-      { name: "\u{1f525}", value: this.props.fire },
+      // { name: "\u{1F641}", value: this.props.meh },
+      // { name: "\u{1f525}", value: this.props.fire },
     ],
   };
 
   render() {
     let chartData = [
-      { name: "\u{1F600}", value: this.props.barf },
-      { name: "\u{1F641}", value: this.props.meh },
-      { name: "\u{1f525}", value: this.props.fire },
+      { name: "\u{1F600}", value: this.props.barf }
+      // { name: "\u{1F641}", value: this.props.meh },
+      // { name: "\u{1f525}", value: this.props.fire },
     ];
 
     let barHeight = 30;
@@ -66,12 +66,12 @@ class BarChart extends React.Component {
     ));
 
     return (
-      <svg width="800" height="150">
+      <svg width="800" height="50">
         <g className="container">
           {/* <text className="title" x="10" y="30">
             Week beginning 9th July
           </text> */}
-          <g className="chart" transform="translate(100,60)">
+          <g className="chart" transform="translate(40,0)">
             {barGroups}
           </g>
         </g>

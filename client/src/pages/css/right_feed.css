@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Manrope:wght@500&family=Poppins:wght@500&family=Slabo+13px&family=Slabo+27px&display=swap');
+/* import Fonts from Google Fonts */
+
+/* Domine, Manrope, Poppins, Slabo13 px, Slabo 27px */
+
+:root {
+  --entry: #a4a4a4;
+  --hover: #e1e1e150;
+  --d-green: #6a994e;
+  --l-green: #a7c957;
+  --grey: #e5e5e5;
+  --cream: #f2e8cf;
+  --voting: #386641;
+}
+
+.entry {
+  margin-top: 1em;
+
+  /* background-color: var(--grey); */
+}
+
+.titleArea {
+  padding-left: 0em;
+  font-family: 'Domine';
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: capitalize;
+
+}
+
+.selectedPostTitle h3 {
+  /* color: var(--cream); */
+  font-family: "Poppins";
+  font-size: 36px;
+
+  margin-top: .5em;
+
+  font-weight: bolder;
+  text-align: center;
+}
+
+
+.selectedPostText h3 {
+  /* color: var(--cream); */
+  font-family: "Poppins";
+  font-size: 55px;
+
+
+  font-size: 24px;
+  font-weight: bolder;
+  font-family: Poppins;
+
+  text-align: center;
+
+  letter-spacing: 0.5px;
+}
+
+.publicPosts {
+  background-color: var(--d-green);
+  padding: 0.35em 0em 0.35em 1em;
+  margin-bottom: 2em;
+  /* margin-left: .75em; */
+
+  border-radius: 10px;
+
+  font-family: "Poppins";
+  font-size: 16px;
+}
+
+.publicPosts p {
+  margin-bottom: 0.25em;
+}
+
+.options{
+  margin: 1em;
+}
